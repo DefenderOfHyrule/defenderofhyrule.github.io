@@ -1,0 +1,68 @@
+site_name: NH-Modchip guide
+
+copyright: Copyright &copy; 2024 <a href="https://discord.gg/C29hYvh" target="_blank">Nintendo Homebrew</a>, Maintained by the <a href="/switch-guide/about">NH Discord Server</a>.
+site_description: Switch Modchip Installation Guide.
+site_author: NH Discord Server.
+site_url: https://github.com/DefenderOfHyrule/defenderofhyrule.github.io
+repo_url: https://github.com/DefenderOfHyrule/defenderofhyrule.github.io
+repo_name: defenderofhyrule.github.io
+
+theme:
+  name: material
+  favicon: img/favicon.ico
+  features:
+    - toc.integrate
+    - navigation.instant
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tracking
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  icon:
+    repo: fontawesome/brands/github
+    logo: fontawesome/solid/wrench
+
+nav:
+    - Home: index.md
+    - Modchip overview:
+        - 'Kinds of modchips': 'modchip/modchip_choice.md'
+        - 'Flashing the modchip': 'modchip/flashing_modchip.md'
+        - 'Modchip installation Switch': 'modchip/normal.md'
+        - 'Modchip installation Switch Lite': 'modchip/lite.md'
+        - 'Modchip installation Switch OLED': 'modchip/oled.md'
+    - Troubleshooting:
+        - 'Error codes': 'troubleshooting/error_codes.md'
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      toc_depth: 3
