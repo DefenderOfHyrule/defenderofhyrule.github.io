@@ -8,9 +8,9 @@ This page will guide you through the modchip installation process on "Normal" mo
 - Flux (preferably halogen free flux)
 - Thermal paste (preferably non-conductive)
 - Isopropyl Alcohol (preferably 95-99% IPA)
-- Your modchip
+- Your modchip (including the SoC ribbon cable)
 - Kapton tape (optional, but recommended)
-- Toothpicks/Q tips (to remove the thermal paste between the capacitors)
+- Toothpicks/Q-tips (to remove the thermal paste between the capacitors on the SoC)
 - Soldering tin (leaded is recommended, unleaded will work depending on your skill level)
 - A fume extractor (for your own health and safety)
 - A microscope (optional but recommended)

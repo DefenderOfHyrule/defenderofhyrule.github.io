@@ -6,8 +6,7 @@ Flashing the firmware to the modchip is not a requirement but it is recommended 
 #### What you need:
 
 - The micro USB / USB-C debug port that comes with a modchip "set" (image shown in the "Instructions" section below)
-- Your Picofly modchip
-- A stock `RP2040 Zero` development board
+- Your Picofly modchip/a stock `RP2040 Zero` development board
 - A computer or Android phone (computer recommended)
 - A USB type C to USB type A cable / A micro USB to USB type A cable capable of data transfer
      - The type of cable required depends on the modchip revision you have.
