@@ -11,19 +11,19 @@ The modchip models we will be covering in this guide are:
 
 ??? note "Picofly Core"
 
-    Picofly Core is the modchip model for "Normal" Switch consoles, such as regular V1 and V2 consoles. This modchip plugs into the eMMC FPC port on the motherboard and sits on top of the RAM part of the SoC/RAM "heatsink" once installed.
+    Picofly Core is the modchip model for "Normal" Switch consoles, such as regular V1 and V2 consoles. This modchip plugs into the eMMC FPC port on the motherboard and sits on top of the RAM part of the SoC/RAM "IHS" (Internal Heat Spreader) once installed.
 
     This is what it looks like:
 
 ??? info "Picofly Lite"
 
-    Picofly Lite is the modchip model for "Lite" Switch consoles, this modchip is positioned at the top left next to the corner of the SoC heatsink frame once installed.
+    Picofly Lite is the modchip model for "Lite" Switch consoles, this modchip is positioned at the top left next to the corner of the SoC "IHS" (Internal Heat Spreader) frame once installed.
 
     This is what it looks like:
 
 ??? success "Picofly OLED"
 
-    Picofly OLED is the modchip model for "OLED" Switch consoles, this modchip is also positioned on the the RAM section of the SoC/RAM "heatsink" like the Picofly Core model once installed.
+    Picofly OLED is the modchip model for "OLED" Switch consoles, this modchip is also positioned on the the RAM section of the SoC/RAM "IHS" (Internal Heat Spreader) like the Picofly Core model once installed.
 
     This is what it looks like:
 
@@ -33,3 +33,5 @@ The modchip models we will be covering in this guide are:
     Picofly was originally based off of the stock `RP2040 Zero` board and is still the most reliable Picofly modchip due to the quality control of these development boards. The installation is a bit more "bare" as you will need to use wire to solder from the development board to the required solder points on the motherboard. Buying an SoC ribbon cable for the solder points on the SoC is recommended if you do decide to go with this method. You will also need to buy the required resistors but there will be more information on this later in the guide. This modchip is compatible with all models of Switch consoles.
 
     This is what it looks like:
+
+[Continue to Flashing the modchip :material-arrow-right:](flashing_modchip.md){ .md-button .md-button--primary }
