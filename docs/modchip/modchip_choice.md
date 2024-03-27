@@ -1,1 +1,35 @@
-### Welcome
+#### Modchip models
+
+There are different modchip models for each model of Switch console, *technically* you can also use modchip models not meant for your specific Switch console but it can introduce complications, which is why it won't be covered here.
+
+The modchip models we will be covering in this guide are:
+
+- Picofly Core (For Normal Switch models)
+- Picofly Lite (For Lite Switch models)
+- Picofly OLED (For OLED Switch models)
+- Picofly (Stock development board)
+
+??? note "Picofly Core"
+
+    Picofly Core is the modchip model for "Normal" Switch consoles, such as regular V1 and V2 consoles. This modchip plugs into the eMMC FPC port on the motherboard and sits on top of the RAM part of the SoC/RAM "heatsink" once installed.
+
+    This is what it looks like:
+
+??? info "Picofly Lite"
+
+    Picofly Lite is the modchip model for "Lite" Switch consoles, this modchip is positioned at the top left next to the corner of the SoC heatsink frame once installed.
+
+    This is what it looks like:
+
+??? success "Picofly OLED"
+
+    Picofly OLED is the modchip model for "OLED" Switch consoles, this modchip is also positioned on the the RAM section of the SoC/RAM "heatsink" like the Picofly Core model once installed.
+
+    This is what it looks like:
+
+
+??? warning "Picofly (Stock development board)"
+
+    Picofly was originally based off of the stock `RP2040 Zero` board and is still the most reliable Picofly modchip due to the quality control of these development boards. The installation is a bit more "bare" as you will need to use wire to solder from the development board to the required solder points on the motherboard. Buying an SoC ribbon cable for the solder points on the SoC is recommended if you do decide to go with this method. You will also need to buy the required resistors but there will be more information on this later in the guide. This modchip is compatible with all models of Switch consoles.
+
+    This is what it looks like:

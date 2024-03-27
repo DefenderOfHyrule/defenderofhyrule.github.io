@@ -36,9 +36,9 @@ theme:
     logo: fontawesome/solid/wrench
 
 nav:
-    - Home: index.md
+    - Introduction to modchips: index.md
     - Modchip overview:
-        - 'Kinds of modchips': 'modchip/modchip_choice.md'
+        - 'Modchip variants': 'modchip/modchip_choice.md'
         - 'Flashing the modchip': 'modchip/flashing_modchip.md'
         - 'Modchip installation Switch': 'modchip/normal.md'
         - 'Modchip installation Switch Lite': 'modchip/lite.md'
