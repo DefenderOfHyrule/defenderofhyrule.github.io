@@ -15,11 +15,15 @@ The modchip models we will be covering in this guide are:
 
     This is what it looks like:
 
+    ![rp2040-core](../img/general_img/core.JPG)
+
 ??? info "Picofly Lite"
 
     Picofly Lite is the modchip model for "Lite" Switch consoles, this modchip is positioned at the top left next to the corner of the SoC "IHS" (Internal Heat Spreader) frame once installed.
 
     This is what it looks like:
+
+    ![rp2040-lite](../img/general_img/lite.JPG)
 
 ??? success "Picofly OLED"
 
@@ -27,11 +31,14 @@ The modchip models we will be covering in this guide are:
 
     This is what it looks like:
 
+    ![rp2040-oled](../img/general_img/oled.JPG)
 
 ??? warning "Picofly (Stock development board)"
 
     Picofly was originally based off of the stock `RP2040 Zero` board and is still the most reliable Picofly modchip due to the quality control of these development boards. The installation is a bit more "bare" as you will need to use wire to solder from the development board to the required solder points on the motherboard. Buying an SoC ribbon cable for the solder points on the SoC is recommended if you do decide to go with this method. You will also need to buy the required resistors but there will be more information on this later in the guide. This modchip is compatible with all models of Switch consoles.
 
     This is what it looks like:
+
+    ![rp2040-zero](../img/general_img/rp2040-zero.jpg)
 
 [Continue to Flashing the modchip :material-arrow-right:](flashing_modchip.md){ .md-button .md-button--primary }

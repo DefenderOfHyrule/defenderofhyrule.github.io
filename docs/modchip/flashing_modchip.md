@@ -6,7 +6,7 @@ Flashing the firmware to the modchip is not a requirement but it is recommended 
 #### What you need:
 
 - The micro USB / USB-C debug port that comes with a modchip "set" (image shown in the "Instructions" section below)
-- Your Picofly modchip/a stock `RP2040 Zero` development board
+- Your Picofly modchip / A stock `RP2040 Zero` development board
 - A computer or Android phone (computer recommended)
 - A USB type C to USB type A cable / A micro USB to USB type A cable capable of data transfer
      - The type of cable required depends on the modchip revision you have.
@@ -23,6 +23,7 @@ Flashing the firmware to the modchip is not a requirement but it is recommended 
     - This step can be ignored for the stock `RP2040 Zero` development board users as they can be flashed directly via the soldered on USB-C port.
 
 3. Lift up the locking tab and plug the USB debug port into the connector at the bottom of your modchip, then lock the locking tab to secure the USB debug port in place.
+    - This step can also be ignored for the stock `RP2040 Zero` development board users as they do not have this port and do not require a separate USB debug port.
 
 4. Hold the `BOOT` button on the modchip and plug the USB debug port into your PC via your data transfer-capable USB cable.
 
@@ -31,14 +32,6 @@ Flashing the firmware to the modchip is not a requirement but it is recommended 
 6. Drag the .uf2 file into the root of the drive and wait for the file transfer to finish. The drive will eject itself after it's done.
 
 7. Your modchip is now flashed with the latest firmware version, proceed with the modchip installation for your model of Switch console by pressing the relevant button below.
-
-[Continue to Modchip installation Switch :material-arrow-right:](normal.md){ .md-button .md-button--primary }
-
-[Continue to Modchip installation Switch Lite :material-arrow-right:](lite.md){ .md-button .md-button--primary }
-
-[Continue to Modchip installation Switch OLED :material-arrow-right:](oled.md){ .md-button .md-button--primary }
-
-
 
 ??? note "About flashing Hwfly/SX series modchips"
 
@@ -61,4 +54,11 @@ Flashing the firmware to the modchip is not a requirement but it is recommended 
 
     6. Wait for the script to finish, it will tell you when it's done and prompt you to press a key to exit the flashing script.
 
-    7. Your modchip is now flashed with the latest firmware version, proceed with the modchip installation for your model of Switch console using the blue buttons above.
+    7. Your modchip is now flashed with the latest firmware version, proceed with the modchip installation for your model of Switch console using the blue buttons below.
+
+
+[Continue to Modchip installation Switch :material-arrow-right:](normal.md){ .md-button .md-button--primary }
+
+[Continue to Modchip installation Switch Lite :material-arrow-right:](lite.md){ .md-button .md-button--primary }
+
+[Continue to Modchip installation Switch OLED :material-arrow-right:](oled.md){ .md-button .md-button--primary }
