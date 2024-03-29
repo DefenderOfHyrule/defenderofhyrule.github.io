@@ -57,7 +57,7 @@ Specific steps such as photos of the screws you need to unscrew aren't mentioned
 
 8. Ensure your working area is clean, you do *not* want to have thermal paste interfere with your soldering tin. This can also cause corrosion over time if you don't clean the area properly.
 
-9. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable. (This process is the same for V2 SoC consoles and ribbon cables, the only difference is the orientation of the pads that are connected to each side of the capacitors on the SoC.)
+9. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable. (This process is the same for V2 SoC consoles and ribbon cables, the only difference are the orientation of the capacitors and the pads that are connected to each side of the capacitors on the SoC.)
      ![sp1-sp2](../img/normal_img/sp1-sp2/not-tinned.JPG)
      ![sp1-sp2](../img/normal_img/sp1-sp2/tinned.JPG)
 
@@ -73,7 +73,7 @@ Specific steps such as photos of the screws you need to unscrew aren't mentioned
        - Optional: Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
        ![kapton](../img/normal_img/13-kapton.jpg)
 
-14. Install the modchip. Slide the SoC ribbon cable into the connector on the left side of the modchip, install the left side of the modchip onto the eMMC module's FPC connector, install the eMMC module on the modchip, place a non-conductive material (like Kapton tape) between the eMMC module and the RAM chips, reconnect the battery and turn the console on. The modchip should blink blue a couple of times(glitching), then white (success). You should end up at a "No SD Card" splash screen with the Picofly logo after the modchip blinks white once.
+14. Install the modchip. Slide the SoC ribbon cable into the connector on the left side of the modchip, install the left side of the modchip onto the eMMC module's FPC connector, install the eMMC module on the modchip, place a non-conductive material (like Kapton tape) between the eMMC module and the RAM chips, reconnect the battery and turn the console on. The modchip should blink blue a couple of times (glitching), then white (success). You should end up at a "No SD Card" splash screen with the Picofly logo after the modchip blinks white once.
      ![test-install](../img/normal_img/12.JPG)
      ![test-install](../img/normal_img/14.JPG)
 
@@ -90,10 +90,10 @@ Specific steps such as photos of the screws you need to unscrew aren't mentioned
 
 #### What's next?
 
-From here, if you get the same result as I did, you can continue following the NH Server guide to set up CFW by clicking the button below.
+From here, if you get the same result as I did, you can continue following the NH Server guide to set up CFW by clicking the button below. If you want to know more about the functionality of modchips
 
 [Continue to the NH Server guide :material-arrow-right:](https://nh-server.github.io/switch-guide/){ .md-button .md-button--primary }
 
 !!! danger
     If you didn't get the same result as I did and are running into issues, please follow the troubleshooting section of this guide.
-    It can be found [here](../troubleshooting/error_codes/).
+    It can be found [here](../troubleshooting/error_codes.md).
