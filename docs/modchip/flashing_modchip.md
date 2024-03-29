@@ -29,7 +29,7 @@ Flashing the firmware to the modchip is not a requirement but it is recommended 
 
 5. Your PC should play the "Device connected" sound and a drive should show up on your PC, you should be able to access and open it.
 
-6. Drag the .uf2 file into the root of the drive and wait for the file transfer to finish. The drive will eject itself after it's done.
+6. Drag the `.uf2` file into the root of the drive and wait for the file transfer to finish. The drive will eject itself after it's done.
 
 7. Your modchip is now flashed with the latest firmware version, proceed with the modchip installation for your model of Switch console by pressing the relevant button below.
 
