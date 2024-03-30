@@ -93,6 +93,6 @@ From here, if you get the same result as I did, you can continue following the N
 
 [Continue to the NH Server guide :material-arrow-right:](https://nh-server.github.io/switch-guide/){ .md-button .md-button--primary }
 
-!!! danger
+!!! danger ""
     If you didn't get the same result as I did and are running into issues, please follow the troubleshooting section of this guide.
     It can be found [here](../troubleshooting/error_codes.md).

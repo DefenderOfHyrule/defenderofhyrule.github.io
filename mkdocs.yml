@@ -66,3 +66,6 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 3
+
+extra_css:
+  - css/custom.css
