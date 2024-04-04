@@ -46,8 +46,9 @@ nav:
     - Functionality:
        -  'Functionality of modchips': 'functionality/functionality_of_modchips.md'
     - Troubleshooting:
-        - 'Error codes': 'troubleshooting/error_codes.md'
-
+        - 'Error troubleshooting': 'troubleshooting/error_codes.md'
+    - Extras:
+        - 'Alternative methods to flash your modchip': 'extras/alternate_flashing.md'
 
 markdown_extensions:
   - admonition
