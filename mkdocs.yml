@@ -48,6 +48,7 @@ nav:
     - Troubleshooting:
         - 'Error troubleshooting': 'troubleshooting/error_codes.md'
     - Extras:
+        - 'Credits': 'extras/credits.md'
         - 'Alternative methods to flash your modchip': 'extras/alternate_flashing.md'
 
 markdown_extensions:
