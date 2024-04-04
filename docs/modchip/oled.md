@@ -4,10 +4,24 @@ hide:
   - toc
 ---
 
-#### The Installation
+### **The Installation**
 
 This page will guide you through the modchip installation process on "OLED" model Switch consoles. Everything you need will be listed and pictures of what your solder joints should look like will be posted by each step.
 Specific steps such as photos of the screws you need to unscrew aren't mentioned here as they can be found on guides from iFixit (for example). It's expected for you to know what to unscrew.
+
+#### Diode reading values
+
+These values can differ from console to console. If your modchip installation works fine and doesn't match these exact values, it's not an issue. These values can act as "indicators" about what you might expect. Especially the `C` (DAT0) point can have a large range of acceptable values.
+
+| Positive to ground     | Negative to ground     |
+| ---------------------- | ---------------------- |
+| **SP1**  `~0.420`      | **SP1**  `~0.520`      |
+| **SP2**  `~0.25`       | **SP2**  `~0.20`       |
+| **A**    `~0.470`      | **A**    `~0.875`      |
+| **B**    `~0.405`      | **B**    `OL`          |
+| **C**    `~0,435`      | **C**    `~0.500-0.850`|
+| **D**    `~0.440`      | **D**    `~0.880`      |
+| **3.3v** `~0.445`      | **3.3v** `~0.850`      |
 
 #### Requirements:
 

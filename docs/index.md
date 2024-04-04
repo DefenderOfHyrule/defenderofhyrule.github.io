@@ -18,7 +18,7 @@ Any modchip containing the `RP2040` microcontroller is a Picofly modchip.
 
 You can find them on AliExpress and similar websites by common names such as `RP2040 switch` or simply `picofly`, Amazon also has resellers that sell them but (as should be known), resellers sell the cheaper AliExpress products for a higher price. Buying them from Amazon is not recommended unless you don't care about the price.
 
-- Note: Picofly listings with "Hwfly" in the name are not Hwfly modchips but just use the word as keyword so they can be found easier. Picofly modchips have the larger square black chip with the Raspberry Pi logo on them, which is one way of identifying them (this is the `RP2040` microcontroller). They also look much "simpler" in appearance compared to Hwfly modchips.
+- **Note:** Picofly listings with "Hwfly" in the name are not Hwfly modchips but just use the word as keyword so they can be found easier. Picofly modchips have the larger square black chip with the Raspberry Pi logo on them, which is one way of identifying them (this is the `RP2040` microcontroller). They also look much "simpler" in appearance compared to Hwfly modchips.
 
 Once you've read this, you may continue to the next page.
 
