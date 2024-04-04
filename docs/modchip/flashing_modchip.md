@@ -1,7 +1,11 @@
 #### Introduction
 
 Modchips have their own separate firmware version that is separate from the Switch's system firmware version, this firmware ultimately determines the functionality and performance of your modchip.
-Flashing the firmware to the modchip is not a requirement but it is recommended to do so, generally speaking. Any Picofly firmware below version `2.70` is deprecated and is no longer supported, this is why we will be ensuring that the modchip has the latest firmware version, namely `2.75`, flashed to it. This will make sure that you have the best performance and hardware compatibility.
+Flashing the firmware to the modchip is not a requirement but it is recommended to do so, generally speaking.
+
+Any Picofly firmware below version `2.70` is deprecated and is no longer supported, this is why we will be ensuring that the modchip has the latest firmware version, namely `2.75`, flashed to it. This will make sure that you have the best performance and hardware compatibility.
+
+**If you're looking to flash your modchip's firmware while it's installed in your Switch console already, see [this page](../extras/alternate_flashing.md).**
 
 #### What you need:
 
