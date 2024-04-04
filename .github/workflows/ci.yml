@@ -34,3 +34,7 @@ jobs:
       - run: pip install mkdocs-material 
 
       - run: mkdocs gh-deploy --force
+
+      - run: |
+          touch site/.nojekyll
+          cp CNAME site/CNAME
