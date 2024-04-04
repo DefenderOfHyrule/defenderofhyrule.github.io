@@ -35,6 +35,6 @@ jobs:
 
       - run: mkdocs gh-deploy --force
 
-      - run: |
-          touch site/.nojekyll
-          cp CNAME site/CNAME
+      - run: touch site/.nojekyll
+
+      - run: cp CNAME site/CNAME
