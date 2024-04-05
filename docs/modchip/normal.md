@@ -21,7 +21,7 @@ These values can differ from console to console. If your modchip installation wo
 #### Requirements:
 
 - A soldering iron with a small(er) tip (preferably temperature controlled that can reach 350C consistently)
-- Flux (preferably halogen free flux)
+- Good quality flux
 - The right screwdriver bits (+00 and Y1.5 bits)
 - Thermal paste (preferably non-conductive)
 - Isopropyl Alcohol (preferably 95-99% IPA)

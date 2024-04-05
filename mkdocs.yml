@@ -51,6 +51,7 @@ nav:
         - 'Alternative methods to flash your modchip': 'extras/alternate_flashing.md'
         - 'Trinket M0 based modchips': 'extras/trinket.md'
         - 'Hardmodding the SD card reader': 'extras/sdreader.md'
+        - 'PicoBoot (GC)': 'extras/picoboot.md'
     - Credits:
         - 'Credits': 'credits/credits.md'
 
