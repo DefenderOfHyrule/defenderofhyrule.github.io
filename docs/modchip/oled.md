@@ -13,15 +13,15 @@ Specific steps such as photos of the screws you need to unscrew aren't mentioned
 
 These values can differ from console to console. If your modchip installation works fine and doesn't match these exact values, it's not an issue. These values can act as "indicators" about what you might expect. Especially the `C` (DAT0) point can have a large range of acceptable values.
 
-| Positive to ground     | Negative to ground     |
-| ---------------------- | ---------------------- |
-| **SP1**  `~0.420`      | **SP1**  `~0.520`      |
-| **SP2**  `~0.25`       | **SP2**  `~0.20`       |
-| **A**    `~0.470`      | **A**    `~0.875`      |
-| **B**    `~0.405`      | **B**    `OL`          |
-| **C**    `~0,435`      | **C**    `~0.500-0.850`|
-| **D**    `~0.440`      | **D**    `~0.880`      |
-| **3.3v** `~0.445`      | **3.3v** `~0.850`      |
+| Positive to ground        | Negative to ground           |
+| ------------------------- | ---------------------------- |
+| **SP1** `~0.420`          | **SP1** `~0.520`             |
+| **SP2** `~0.25`           | **SP2** `~0.20`              |
+| **A** (CMD) `~0.470`      | **A** (CMD) `~0.875`         |
+| **B** (RST) `~0.405`      | **B** (RST) `OL`             |
+| **C** (DAT0) `~0.435`     | **C** (DAT0) `~0.500-0.850`  |
+| **D** (CLK) `~0.440`      | **D** (CLK) `~0.880`         |
+| **3.3v** `~0.445`         | **3.3v** `~0.850`            |
 
 #### Requirements:
 
@@ -35,8 +35,10 @@ These values can differ from console to console. If your modchip installation wo
 - A dental pick or other thin and sharp tool (to scrape away the top layer of the PCB for the B point)
 - Toothpicks/Q-tips (to remove the thermal paste between the capacitors on the SoC)
 - Soldering tin (leaded is recommended, unleaded will work depending on your skill level)
+- Double sided tape
 - A fume extractor (for your own health and safety)
 - A microscope (optional but recommended)
+- UV Solder mask (optional but recommended)
 
 ??? note "Note for stock RP2040 Zero development board users"
      If you use a stock `RP2040 Zero` development board, you will need to desolder the USB-C port,`BOOT` and `RESET` buttons before continuing. You'll also need to purchase the SoC ribbon cable separately together with 5x `0805 47Ω +-1%` resistors (5x is recommended, 3x is possible in some instances).
@@ -46,7 +48,7 @@ These values can differ from console to console. If your modchip installation wo
 
 1. Unscrew the Switch's backplate.
 
-2. Remove the metal shield/cover (be careful with the antennas that are routed across the metal shield/cover).
+2. Remove the metal shield/cover (be careful with the antennas that are routed across the metal shield/cover) and disconnect the battery at the bottom right of the motherboard.
 
 3. Remove the Gamecard reader/SD card reader board.
 
@@ -65,4 +67,61 @@ These values can differ from console to console. If your modchip installation wo
 
 10. Remove the metal plate covering the eMMC chip on the back of the motherboard.
 
-11. Turn the motherboard back around and scrape away the B point on the motherboard using a thin and sharp metal tool.
+11. Turn the motherboard back around, remove a part of the SoC/RAM frame next to the `D`(CLK) point and scrape away the `D`(CLK) point on the motherboard using a thin and sharp metal tool until the pad underneath is visible and open to the air (otherwise you won't be able to follow along with the next step).
+
+12. Tin the `D`(CLK) point and wire, then solder a piece of your wire to the `D` point and solder it to the `D` point on the modchip.
+
+
+      - Optional: Use UV solder mask on the `D` point. It's a very fragile point and is not something you want to have to potentially resolder in the future.
+
+
+13. Tin your wire and solder a piece of wire to the bottom end of the `A`(CMD) resistor, then solder the other end of the wire to the `A` point on the modchip. Be careful, as heating this resistor up too much has the chance to kill the resistor or will cause it to stick to your soldering iron and wipe it off of the motherboard completely (this only happens if your soldering iron is too hot and hold it on the resistor for too long).
+
+
+      - Optional: Use UV solder mask on the `A` point. It's a very fragile point and is not something you want to have to potentially resolder in the future.
+
+
+14. Turn the console back around and locate the eMMC chip at the top left of the motherboard. Remove a part of the top side of the frame, then slide your DAT0 adapter underneath the eMMC chip until the markings on the adapter line up with the outline of the eMMC chip.
+
+15. Use tweezers to push the DAT0 adapter into the solder ball underneath the eMMC chip (be careful while doing this, don't put too much pressure on it) and solder the anker point of the DAT0 adapter to a part of the anker points the frame was attached to on the motherboard. Make sure you keep pressure on the DAT0 adapter until you've soldered the anker points down. This is your `C`(DAT0) point.
+      - Optional: Test the C point by putting the negative lead of your multimeter on the `C` point of the DAT0 adapter and putting your positive lead on ground. You should end up with a value in between ~0.500-0.850 generally speaking. This value is measured in Diode mode on a multimeter. (As mentioned at the top of this page, the range differs from console to console and if it works for you, there is no issue.)
+
+16. Solder a wire from the `C`(DAT0) point on the DAT0 adapter to the `C` point on the modchip.
+
+17. Turn the motherboard back around and locate the `3.3v` capacitors near the top-middle of the motherboard. Solder a piece of wire to the bottom end of the right capacitor and solder the other end of the wire to the `3.3v` pad on the modchip.
+
+18. Turn the motherboard back around and locate the `B` point on the back of the motherboard. It's located at the very bottom of the motherboard, to the left of the C shaped "cutout" for the left speaker cable.
+Solder a wire to the `B` point and solder the other end of the wire to the `B` point at the bottom of your modchip.
+
+19. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable.
+
+20. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
+
+21. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly.
+
+22. Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
+
+23. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
+       - Optional: Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
+
+24. Plug the SoC ribbon cable into the port on the top left of the modchip, make sure you lift the locking tab up first before inserting it. Once inserted, lock the locking tab again.
+
+25. Modify the IHS to make the SoC ribbon cable fit out of the top of the SoC section of the IHS and reinstall the IHS. (Don't forget to apply thermal paste in between the SoC and IHS!)
+
+26. Place a piece of double sided tape on top of the RAM section of the IHS, then place the modchip on top of it to secure it in place. Make sure no components (such as the SoC ribbon cable and wires you soldered onto the modchip) are under any kind of stress when doing this.
+
+27. Your Switch should now look like the image below. If it does, you can test power it on and you should be greeted with the "No SD Card" splash screen with the Picofly logo.
+
+28. Place a piece of Kapton tape (or other non-conductive material) on top of the modchip and reassemble the console.
+
+29. Turn the Switch on and you should still end up at the "No SD Card" splash screen. If so, you've successfully followed and finished this guide.
+
+#### What's next?
+
+From here, if you get the same result as I did, you can continue following the NH Server guide to set up CFW by clicking the button below. If you want to know more about the functionality of modchips, visit the "**Functionality of modchips**" page [here](../functionality/functionality_of_modchips.md).
+
+[Continue to the NH Server guide :material-arrow-right:](https://nh-server.github.io/switch-guide/){ .md-button .md-button--primary }
+
+!!! danger ""
+    If you didn't get the same result as I did and are running into issues, please follow the troubleshooting section of this guide.
+    It can be found [here](../troubleshooting/error_codes.md).

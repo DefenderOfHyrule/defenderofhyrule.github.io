@@ -19,7 +19,7 @@ The modchip models we will be covering in this guide are:
 
 ??? info "Picofly Lite"
 
-    Picofly Lite is the modchip model for "Lite" Switch consoles, this modchip is positioned at the top left next to the corner of the SoC "IHS" (Internal Heat Spreader) frame once installed.
+    Picofly Lite is the modchip model for "Lite" Switch consoles, this modchip is positioned at the top left next to the corner of the SoC "IHS" (Internal Heat Spreader) frame and on top of the metal plate covering the eMMC once installed.
 
     This is what it looks like:
 

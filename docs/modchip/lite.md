@@ -13,10 +13,15 @@ Specific steps such as photos of the screws you need to unscrew aren't mentioned
 
 These values can differ from console to console. If your modchip installation works fine and doesn't match these exact values, it's not an issue. These values can act as "indicators" about what you might expect.
 
-| Positive to ground     | Negative to ground     |
-| ---------------------- | ---------------------- |
-| **SP1**  `~0.125`      | **SP1**  `~0.125`      |
-| **SP2**  `~0.12`       | **SP2**  `~0.10`       |
+| Positive to ground        | Negative to ground           |
+| ------------------------- | ---------------------------- |
+| **SP1** `~0.125`          | **SP1** `~0.125`             |
+| **SP2** `~0.12`           | **SP2** `~0.10`              |
+| **A** (CMD) `~0.470`      | **A** (CMD) `~0.875`         |
+| **B** (RST) `~0.405`      | **B** (RST) `OL`             |
+| **C** (DAT0) `~0.435`     | **C** (DAT0) `~0.500-0.850`  |
+| **D** (CLK) `~0.440`      | **D** (CLK) `~0.880`         |
+| **3.3v** `~0.445`         | **3.3v** `~0.850`            |
 
 #### Requirements:
 
@@ -29,8 +34,10 @@ These values can differ from console to console. If your modchip installation wo
 - Kapton tape (optional, but recommended)
 - Toothpicks/Q-tips (to remove the thermal paste between the capacitors on the SoC)
 - Soldering tin (leaded is recommended, unleaded will work depending on your skill level)
+- Double sided tape
 - A fume extractor (for your own health and safety)
 - A microscope (optional but recommended)
+- UV Solder mask (optional but recommended)
 
 ??? note "Note for stock RP2040 Zero development board users"
      If you use a stock `RP2040 Zero` development board, you will need to desolder the USB-C port,`BOOT` and `RESET` buttons before continuing. You'll also need to purchase the SoC ribbon cable separately together with 5x `0805 47Ω +-1%` resistors (5x is recommended, 3x is possible in some instances).
@@ -48,3 +55,15 @@ These values can differ from console to console. If your modchip installation wo
 
 5. Remove and clean up the thermal paste on the SoC die and around/in-between the capacitors on the SoC using IPA.
        - You can also clean off the thermal paste between the IHS and heatpipe/heatsink in the meantime, the red-ish colored thermal goop between the heatpipe/heatsink and metal shield/cover can be left alone.
+
+6. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable.
+
+7. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
+
+8. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly.
+
+9. Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
+
+10. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
+       - Optional: Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
+
