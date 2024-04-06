@@ -1,6 +1,6 @@
 site_name: NH-Switch Modchip Installation Guide
 
-copyright: Copyright &copy; 2024 <a href="https://discord.gg/C29hYvh" target="_blank">DefenderOfHyrule</a>, Maintained by <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io">DefenderOfHyrule</a>.
+copyright: Copyright &copy; 2024 <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io" target="_blank">DefenderOfHyrule</a>, Maintained by <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io">DefenderOfHyrule</a>.
 site_description: Switch Modchip Installation Guide.
 site_author: DefenderOfHyrule
 repo_url: https://github.com/DefenderOfHyrule/defenderofhyrule.github.io
@@ -49,7 +49,7 @@ nav:
         - 'Error troubleshooting': 'troubleshooting/error_codes.md'
     - Extras:
         - 'Alternative methods to flash your modchip': 'extras/alternate_flashing.md'
-        - 'Trinket M0 based modchips': 'extras/trinket.md'
+        - 'SAMD21 based modchips': 'extras/trinket.md'
         - 'Hardmodding the SD card reader': 'extras/sdreader.md'
         - 'PicoBoot (GC)': 'extras/picoboot.md'
     - Credits:

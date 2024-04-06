@@ -32,7 +32,7 @@ That being said, I do recommend updating your modchip's firmware to the latest f
 
 -----
 
-### **Updating your Hwfly modchip firmware via `hwfly toolbox`:**
+### **Updating your Hwfly/SX Series modchip firmware via `hwfly toolbox`:**
 
 1. Download `hwfly_toolbox.bin` and `release_072.zip` from the link below:
 
