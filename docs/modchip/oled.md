@@ -91,31 +91,33 @@ These values can differ from console to console. If your modchip installation wo
 
 17. Turn the motherboard back around and locate the `3.3v` capacitors near the top-middle of the motherboard. Solder a piece of wire to the bottom end of the right capacitor and solder the other end of the wire to the `3.3v` pad on the modchip.
 
-18. Turn the motherboard back around and locate the `B` point on the back of the motherboard. It's located at the very bottom of the motherboard, to the left of the C shaped "cutout" for the left speaker cable.
+18. Locate the `GND` (ground) pad on the middle-right side of the motherboard. Solder a piece of wire to it and solder the other end of the wire to the `GND` pad on the modchip.
+
+19. Turn the motherboard back around and locate the `B` point on the back of the motherboard. It's located at the very bottom of the motherboard, to the left of the C shaped "cutout" for the left speaker cable.
 Solder a wire to the `B` point and solder the other end of the wire to the `B` point at the bottom of your modchip.
 
-19. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable.
+20. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable.
 
-20. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
+21. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
 
-21. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly.
+22. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly.
 
-22. Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
+23. Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
 
-23. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
+24. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
        - Optional: Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
 
-24. Plug the SoC ribbon cable into the port on the top left of the modchip, make sure you lift the locking tab up first before inserting it. Once inserted, lock the locking tab again.
+25. Plug the SoC ribbon cable into the port on the top left of the modchip, make sure you lift the locking tab up first before inserting it. Once inserted, lock the locking tab again.
 
-25. Modify the IHS to make the SoC ribbon cable fit out of the top of the SoC section of the IHS and reinstall the IHS. (Don't forget to apply thermal paste in between the SoC and IHS!)
+26. Modify the IHS to make the SoC ribbon cable fit out of the top of the SoC section of the IHS and reinstall the IHS. (Don't forget to apply thermal paste in between the SoC and IHS!)
 
-26. Place a piece of double sided tape on top of the RAM section of the IHS, then place the modchip on top of it to secure it in place. Make sure no components (such as the SoC ribbon cable and wires you soldered onto the modchip) are under any kind of stress when doing this.
+27. Place a piece of double sided tape on top of the RAM section of the IHS, then place the modchip on top of it to secure it in place. Make sure no components (such as the SoC ribbon cable and wires you soldered onto the modchip) are under any kind of stress when doing this.
 
-27. Your Switch should now look like the image below. If it does, you can test power it on and you should be greeted with the "No SD Card" splash screen with the Picofly logo.
+28. Your Switch should now look like the image below. If it does, you can test power it on and you should be greeted with the "No SD Card" splash screen with the Picofly logo.
 
-28. Place a piece of Kapton tape (or other non-conductive material) on top of the modchip and reassemble the console.
+29. Place a piece of Kapton tape (or other non-conductive material) on top of the modchip and reassemble the console.
 
-29. Turn the Switch on and you should still end up at the "No SD Card" splash screen. If so, you've successfully followed and finished this guide.
+30. Turn the Switch on and you should still end up at the "No SD Card" splash screen. If so, you've successfully followed and finished this guide.
 
 #### What's next?
 
