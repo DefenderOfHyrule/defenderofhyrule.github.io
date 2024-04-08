@@ -64,8 +64,13 @@ This was made possible by using Pi Pico debugging and getting rid of RGB/GRB iss
 
 **Q:** It says `Payload size too large!` when I turn my console on, what do I do?
 
-**A:** Make sure the payload size is less than 122KB. If you get this error, you're *very* likely using the wrong payload and should re-read the instructions mentioned in the NH Server guide.
+**A:** Make sure the payload size is less than 122KB. If you get this error, you're *very* likely using the wrong payload and should re-read the instructions mentioned in the NH-Server guide.
 
+**Q:** It says `Failed to mount SD Card!` when I turn my console on, what do I do?
+
+**A:** Your SD card isn't formatted correctly. Your SD card *has* to be formatted as `FAT32` or `exFAT` (`FAT32` being the best option out of the two) for the SD card to be able to be mounted (accessible for the modchip and `sdloader`). Another cause of this issue can be due to SD card corruption and would require you to perform SD card integrity checks, for which a guide on how to do so can be found [here](https://wiki.hacks.guide/wiki/Checking_SD_card_integrity).
+
+-----
 
 **If you still experience errors with your Picofly modchip, visit the #switch-assistance-1 or #switch-assistance-2 channels in the NH Discord server <a href="https://discord.gg/C29hYvh">here</a>**.
 
