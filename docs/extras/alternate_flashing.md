@@ -36,7 +36,7 @@ That being said, I do recommend updating your modchip's firmware to the latest f
 
 !!! note "Note"
 
-    This section assumes that you've previously flashed the SX series modchip with `hwfly-nx`. If you haven't done so yet, see the bottom of [this page](../modchip/flashing_modchip.md) to physically flash your modchip by opening up the console. Only do this if you're comfortable with doing so.
+    This section assumes that you've previously flashed the SX series modchip with `hwfly-nx`. If you haven't done so yet, see the bottom of [this page](/modchip/flashing_modchip/#instructions_1) to physically flash your modchip by opening up the console. Only do this if you're comfortable with doing so.
 
 1. Download `hwfly_toolbox.bin` and `release_072.zip` from the link below:
 
