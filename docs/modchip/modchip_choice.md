@@ -4,10 +4,10 @@ There are different modchip models for each model of Switch console, *technicall
 
 The modchip models we will be covering in this guide are:
 
-- Picofly Core (For Normal Switch models)
-- Picofly Lite (For Lite Switch models)
-- Picofly OLED (For OLED Switch models)
-- Picofly (Stock development board)
+- Picofly Core (For Normal Switch models | `HAC-001`, `HAC-001(-01)`)
+- Picofly Lite (For Lite Switch models   | `HDH-001`)
+- Picofly OLED (For OLED Switch models   | `HEG-001`)
+- Picofly (Stock development board       | `HAC-001`, `HAC-001(-01)`, `HDH-001`, `HEG-001`)
 
 ??? note "Picofly Core"
 
