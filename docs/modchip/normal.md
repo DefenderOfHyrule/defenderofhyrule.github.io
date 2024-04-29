@@ -96,6 +96,8 @@ These values can differ from console to console. If your modchip installation wo
      ![reassemble-2](../img/normal_img/21.JPG)
      ![reassemble-3](../img/normal_img/22.JPG)
 
+-----
+
 #### What's next?
 
 From here, if you get the same result as I did, you can continue following the NH Server guide to set up CFW by clicking the button below. If you want to know more about the functionality of modchips, visit the "**Functionality of modchips**" page [here](../functionality/functionality_of_modchips.md).

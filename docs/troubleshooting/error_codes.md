@@ -56,6 +56,8 @@ This was made possible by using Pi Pico debugging and getting rid of RGB/GRB iss
 
 `====` BCT copy failed - read failure
 
+-----
+
 #### **Splash screen troubleshooting**
 
 **Q:** It says `Failed to init SD card!` when I turn my console on, what do I do?
