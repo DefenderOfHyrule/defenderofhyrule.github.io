@@ -8,10 +8,12 @@ hide:
 
 This guide will guide you through the installation of modchips, there are important things you should know before continuing with this guide.
 
-The first thing you should know is that this guide is **not** something you will want to follow without any prior (micro)soldering experience whatsoever.
-Installing a modchip requires the aforementioned microsoldering skills and also requires hardware knowledge (knowledge about hardware in general and also the layout of the Switch's motherboard).
+-----
 
-**Again, this guide is not for beginners and the Switch is not a good first project.**
+#### Again, this guide is not for beginners and the Switch is not a good first project.
+
+The first thing you should know is that this guide is ***not*** something you will want to follow without any prior (micro)soldering experience whatsoever.
+Installing a modchip requires the aforementioned microsoldering skills and also requires hardware knowledge (knowledge about hardware in general and also the layout of the Switch's motherboard).
 
 The second most important thing is that we *only* support Picofly (the stock `RP2040 Zero` development board and "modchip variant" of it) as it's fully open source from its `RP2040` microcontroller to its firmware.
 Any modchip containing the `RP2040` microcontroller is a Picofly modchip.

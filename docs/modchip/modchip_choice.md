@@ -9,6 +9,10 @@ The modchip models we will be covering in this guide are:
 - Picofly OLED (For OLED Switch models   | `HEG-001`)
 - Picofly (Stock development board       | `HAC-001`, `HAC-001(-01)`, `HDH-001`, `HEG-001`)
 
+-----
+
+#### Below you can unfold the relevant section find out what the modchip for your model of Switch looks like:
+
 ??? note "Picofly Core"
 
     Picofly Core is the modchip model for "Normal" Switch consoles, such as regular V1 and V2 consoles. This modchip plugs into the eMMC FPC port on the motherboard and sits on top of the RAM part of the SoC/RAM "IHS" (Internal Heat Spreader) once installed.
@@ -40,5 +44,7 @@ The modchip models we will be covering in this guide are:
     This is what it looks like:
 
     ![rp2040-zero](../img/general_img/rp2040-zero.jpg)
+
+Once you're done, continue to the next page using the button below.
 
 [Continue to Flashing the modchip :material-arrow-right:](flashing_modchip.md){ .md-button .md-button--primary }

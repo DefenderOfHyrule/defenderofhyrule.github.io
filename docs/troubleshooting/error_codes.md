@@ -4,6 +4,8 @@ Are you experiencing issues after your modchip installation? Is your modchip giv
 
 Your modchip will give you error codes if there is an issue with the installation. These error codes consist of long/short pulses of LED patterns and sequences. Troubleshooting these error codes can be done by comparing them to existing/known error codes and will hopefully solve the issue you're experiencing.
 
+-----
+
 ### **Error codes for Picofly**
 
 The following information was obtained from [this github repository](https://github.com/Ansem-SoD/Picofly) and was slightly modified by me:
@@ -58,23 +60,21 @@ This was made possible by using Pi Pico debugging and getting rid of RGB/GRB iss
 
 -----
 
-#### **Splash screen troubleshooting**
+### **Splash screen troubleshooting**
 
-**Q:** It says `Failed to init SD card!` when I turn my console on, what do I do?
+!!! note "**Question:** It says `Failed to init SD Card!` when I turn my console on, what do I do?"
 
-**A:** Make sure your SD card is inserted fully. If it is, your Switch's SD card reader may be malfunctioning. Test it with another SD card and if it also doesn't work, check the FPC port on the motherboard and SD card reader connector for any missing pins (Normal model Switch users). The SD card reader may need to be replaced if on an OLED/Lite Switch.
+    **Answer:** Make sure your SD card is inserted fully. If it is, your Switch's SD card reader may be malfunctioning. Test it with another SD card and if it also doesn't work, check the FPC port on the motherboard and SD card reader connector for any missing pins (Normal model Switch users). The SD card reader/game card reader board may need to be replaced if on an OLED Switch and the soldered on SD card reader may have to be replaced if on a Switch Lite.
 
-**Q:** It says `Payload size too large!` when I turn my console on, what do I do?
 
-**A:** Make sure the payload size is less than 122KB. If you get this error, you're *very* likely using the wrong payload and should re-read the instructions mentioned in the NH-Server guide.
+!!! note "**Question:** It says `Payload size too large!` when I turn my console on, what do I do?"
 
-**Q:** It says `Failed to mount SD Card!` when I turn my console on, what do I do?
+    **Answer:** Make sure the payload size is less than 122KB. If you get this error, you're *very* likely using the wrong payload and should re-read the instructions mentioned in the NH-Server guide.
 
-**A:** Your SD card isn't formatted correctly. Your SD card *has* to be formatted as `FAT32` or `exFAT` (`FAT32` being the best option out of the two) for the SD card to be able to be mounted (accessible for the modchip and `sdloader`). Another cause of this issue can be due to SD card corruption and would require you to perform SD card integrity checks, for which a guide on how to do so can be found [here](https://wiki.hacks.guide/wiki/Checking_SD_card_integrity).
 
------
+!!! note "**Question:** It says `Failed to mount SD Card!` when I turn my console on, what do I do?"
 
-**If you still experience errors with your Picofly modchip, visit the #switch-assistance-1 or #switch-assistance-2 channels in the NH Discord server <a href="https://discord.gg/C29hYvh">here</a>**.
+    **Answer:** Your SD card isn't formatted and/or partitioned correctly. The payload *has* to be placed on the first partition of the SD card and *has* to be formatted as `FAT32` or `exFAT` (`FAT32` being the best option out of the two) for the SD card to be able to be mounted (accessible for the modchip and `sdloader`). Another cause of this issue can be due to SD card corruption and would require you to perform SD card integrity checks, for which a guide on how to do so can be found [here](https://wiki.hacks.guide/wiki/Checking_SD_card_integrity).
 
 -----
 
@@ -93,6 +93,11 @@ You can solder two additional wires to your development board so it can lower th
 - XIAO RP2040: `SDA = 3, SCL = 4`
 
 - ItsyBitsy RP2040: `SDA = 18, SCL = 19`
+
+-----
+
+!!! tip ""
+    **If you still experience errors with your Picofly modchip, visit the #switch-assistance-1 or #switch-assistance-2 channels in the NH-Discord server <a href="https://discord.gg/C29hYvh">here</a>**.
 
 -----
 

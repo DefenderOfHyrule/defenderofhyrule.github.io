@@ -68,3 +68,14 @@ These values can differ from console to console. If your modchip installation wo
 10. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
        - Optional: Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
 
+-----
+
+#### What's next?
+
+From here, if you get the same result as I did, you can continue following the NH Server guide to set up CFW by clicking the button below. If you want to know more about the functionality of modchips, visit the [**Functionality of modchips**](../functionality/functionality_of_modchips.md) page.
+
+[Continue to the NH Server guide :material-arrow-right:](https://nh-server.github.io/switch-guide/){ .md-button .md-button--primary }
+
+!!! danger ""
+    If you didn't get the same result as I did and are running into issues, please follow the troubleshooting section of this guide.
+    It can be found [here](../troubleshooting/error_codes.md).

@@ -11,6 +11,8 @@ This process is the same for all Picofly modchip models, just use the pictures i
 
     **If you're looking to flash your modchip's firmware while it's installed in your Switch console already, see [this page](../extras/alternate_flashing.md).**
 
+-----
+
 #### What you need:
 
 - The micro USB / USB-C debug port that comes with a modchip "set" (image shown in the "Instructions" section below)
@@ -72,7 +74,7 @@ This process is the same for all Picofly modchip models, just use the pictures i
 
     6. Wait for the script to finish, it will tell you when it's done and prompt you to press a key to exit the flashing script.
 
-    7. Your modchip is now flashed with the latest firmware version, proceed with the modchip installation for your model of Switch console using the blue buttons below.
+    7. Your modchip is now flashed with the latest firmware version.
 
 
 [Continue to Modchip installation Switch :material-arrow-right:](normal.md){ .md-button .md-button--primary }
