@@ -4,6 +4,8 @@ This page will be about the installation of `SAMD21` based modchips for Unpatche
 
 - Cold booting means being able to boot into a payload from a fully-off state.
 
+-----
+
 ### **SAMD21**
 
 `SAMD21` is a series of microcontrollers (like the `RP2040` used in Picofly modchips) that have a *lot* of purposes and many different applications. These applications can range from Switch modchips to factory equipment (as an example) and are very useful.

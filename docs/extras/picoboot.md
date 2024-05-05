@@ -4,6 +4,8 @@ This page is unrelated to Switch hacking but is still something i'd like to cove
 The modchip is fully open source and is *very* cheap compared to all other existing modchips for the GameCube.
 Specific steps such as photos of the screws you need to unscrew aren't mentioned here as they can be found on guides from iFixit (for example). It's expected for you to know what to unscrew.
 
+-----
+
 ### **Picoboot**
 
 PicoBoot is a modchip that was "created" by [webhdx](https://github.com/webhdx), it uses a stock `RP2040 Pico` development board that was repurposed as GameCube modchip.

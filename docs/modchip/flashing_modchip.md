@@ -61,18 +61,23 @@ This process is the same for all Picofly modchip models, just use the pictures i
          - [Firmware 0.7.2](firmware/release_072.zip)
 
     2. Position your modchip and included USB debug port in the upwards facing position. This means with the side of the microcontroller (the biggest square chip) facing you. This is important because if you don't do this, you can risk frying the USB circuitry of the modchip. The USB debug port additionally also has `UP` text written on it to indicate the orientation. <br>
-    ![hwfly](../img/general_img/hwfly.JPG){ width="600" }
+    ![hwfly](../img/general_img/hwfly.jpg){ width="600" }
 
     3. Lift up the locking tab and plug the USB debug port into the connector at the bottom of your modchip, then lock the locking tab to secure the USB debug port in place. <br>
-    ![hwfly-with-usb](../img/general_img/hwfly-with-usb.JPG){ width="600" }
+    ![hwfly-with-usb](../img/general_img/hwfly-with-usb.jpg){ width="600" }
 
     4. Plug the USB debug port into your PC via your data transfer-capable USB cable.
-       your PC should play the "Device connected" sound, which indicates that it's plugged in correctly. <br>
-    ![hwfly-with-cable](../img/general_img/hwfly-with-cable.JPG){ width="600" }
+       your PC should play the "Device connected" sound, which indicates that it's plugged in correctly.<br>
+           - **Note:** The modchip will flash blue as soon as it's connected to a power source if the modchip was flashed with spacecraft-nx or hwfly-nx previously. This indicates that it's awaiting USB input.<br>
+       ![hwfly-with-cable](../img/general_img/hwfly-with-cable.jpg){ width="600" }![hwfly-flashing](../img/general_img/hwfly-flashing.jpg){ width="600" }<br>
 
     5. Open the extracted folder from earlier and run `flash.bat`.
 
     6. Wait for the script to finish, it will tell you when it's done and prompt you to press a key to exit the flashing script.
+    ![flashing-hwfly](../img/general_img/flashing-hwfly.gif)<br>
+
+        !!! warning "About "Spacecraft-NX `DFU` not found!""
+            If the flashing script says that the Spacecraft-NX `DFU` was not found, wait for Windows to finish setting up the device. This can take a minute, so be patient and don't panic. <br>
 
     7. Your modchip is now flashed with the latest firmware version.
 

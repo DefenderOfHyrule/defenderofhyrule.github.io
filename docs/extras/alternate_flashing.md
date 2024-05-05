@@ -4,6 +4,7 @@ This page solely exists for people with already-modchipped Switch consoles. It's
 
 That being said, I do recommend updating your modchip's firmware to the latest firmware version to get the best possible performance, reliability and hardware compatibility.
 
+-----
 
 ### **Updating your Picofly modchip firmware via `picofly toolbox`:**
 

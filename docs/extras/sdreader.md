@@ -5,6 +5,8 @@ The reason this page exists is because I despise the design of the SD card reade
 
 If you're solely looking for the replacement FPC port, its part number is `5042081610` but it can also be found by the search term "Nintendo Switch SD Card Reader FPC Port". It can be found on AliExpress, TaoBao or similar websites.
 
+-----
+
 ### **Overview**
 
 I will be using a schematic for this guide, created by @mattyrog (who is also responsible for the creation and documentation of SAMD21 based modchips for unpatched Switch consoles) on gbatemp. [This thread](https://gbatemp.net/threads/nintendo-switch-sd-card-alternative-points.579623/) contains useful pinouts of the SD card reader's FPC connector and alternative points on the motherboard of the Switch. The other alternative points on the back of the motherboard can also be used but may give you lesser performance or will cause the SD card reader to straight up not work.
