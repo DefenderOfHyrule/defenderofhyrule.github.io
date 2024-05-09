@@ -32,13 +32,19 @@ This was made possible by using Pi Pico debugging and getting rid of RGB/GRB iss
 
 `==` CLK (`D`) is not connected.
 
+`***` No eMMC CMD1 response. (Bad eMMC?)
+
+`**=` No eMMC block 1 read. (Should not happen.)
+
+`*==` Bad wiring/cabling, typically has to do with the top ribbon cable that connects `3.3v`, `A`, `B`, `C`, `D` and `GND` pads. (Which is why I don't recommend using that ribbon cable.)
+
+`*=*` No eMMC block 0 read. (eMMC init failure?)
+
 `=**` eMMC initialization failure during glitching process.
 
 `=*=` CPU never reach BCT check, should not happen. Typically caused by the SoC ribbon cable not being seated properly.
 
 `==*` CPU always reach BCT check (no glitch reaction, check MOSFET/SoC ribbon cable).
-
-`*==` Bad wiring/cabling, typically has to do with the top ribbon cable that connects `3.3v`, `A`, `B`, `C`, `D` and `GND` pads. (Which is why I don't recommend using that ribbon cable.)
 
 `===` Glitch attempt limit reached, cannot glitch
 
