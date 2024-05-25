@@ -78,10 +78,10 @@ These values can differ from console to console. If your modchip installation wo
      ![soldered down](../img/normal_img/soldered-down.jpg)
 
 13. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
-       - Optional: Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
+       - **Optional:** Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
        ![kapton](../img/normal_img/13-kapton.jpg)
 
-14. Install the modchip. Slide the SoC ribbon cable into the connector on the left side of the modchip, install the left side of the modchip onto the eMMC module's FPC connector, install the eMMC module on the modchip, place a non-conductive material (like Kapton tape) between the eMMC module and the RAM chips, reconnect the battery and turn the console on. The modchip should blink blue a couple of times (glitching), then white (success). You should end up at a "No SD Card" splash screen with the Picofly logo after the modchip blinks white once.
+14. Install the modchip. Slide the SoC ribbon cable into the connector on the left side of the modchip, install the left side of the modchip onto the eMMC module's FPC connector, install the eMMC module on the modchip, place a non-conductive material (like Kapton tape) between the eMMC module and the RAM chips, reconnect the battery and turn the console on. The modchip should blink blue a couple of times (glitching), then white (success). You should end up at a `No SD Card` splash screen with the Picofly logo after the modchip blinks white once.
      ![test-install](../img/normal_img/12.JPG)
      ![test-install](../img/normal_img/14.JPG)
 
@@ -91,7 +91,7 @@ These values can differ from console to console. If your modchip installation wo
 16. Reassemble the console (don't forget to apply thermal paste!) until you're at the point of putting the metal shield/backplate back in place. The modchip will not fit underneath the metal shield/backplate so you will need to cut a strip out of it, how I personally do this is by using regular scissors and cutting out the middle section.
      ![reassemble](../img/normal_img/16.JPG)
 
-17. Once done, you can fully reassemble the console and your console should now display "No SD Card" when you turn it on normally.
+17. Once done, you can fully reassemble the console and your console should now display `No SD Card` when you turn it on normally.
      ![reassemble-1](../img/normal_img/20.JPG)
      ![reassemble-2](../img/normal_img/21.JPG)
      ![reassemble-3](../img/normal_img/22.JPG)

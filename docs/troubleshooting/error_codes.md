@@ -36,7 +36,7 @@ This was made possible by using Pi Pico debugging and getting rid of RGB/GRB iss
 
 `**=` No eMMC block 1 read. (Should not happen.)
 
-`*==` Bad wiring/cabling, typically has to do with the top ribbon cable that connects `3.3v`, `A`, `B`, `C`, `D` and `GND` pads. (Which is why I don't recommend using that ribbon cable.)
+`*==` Bad wiring/cabling, typically has to do with the top ribbon cable that connects `3.3v`, `A`, `B`, `C`, `D` and `GND` pads. (Which is why I don't recommend using that ribbon cable.) Alternatively, it can also mean that the modchip is defective.
 
 `*=*` No eMMC block 0 read. (eMMC init failure?)
 

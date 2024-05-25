@@ -73,19 +73,19 @@ These values can differ from console to console. If your modchip installation wo
 12. Tin the `D`(CLK) point and wire, then solder a piece of your wire to the `D` point and solder it to the `D` point on the modchip.
 
 
-      - Optional: Use UV solder mask on the `D` point. It's a very fragile point and is not something you want to have to potentially resolder in the future.
+      - **Optional:** Use UV solder mask on the `D` point. It's a very fragile point and is not something you want to have to potentially resolder in the future.
 
 
 13. Tin your wire and solder a piece of wire to the bottom end of the `A`(CMD) resistor, then solder the other end of the wire to the `A` point on the modchip. Be careful, as heating this resistor up too much has the chance to kill the resistor or will cause it to stick to your soldering iron and wipe it off of the motherboard completely (this only happens if your soldering iron is too hot and hold it on the resistor for too long).
 
 
-      - Optional: Use UV solder mask on the `A` point. It's a very fragile point and is not something you want to have to potentially resolder in the future.
+      - **Optional:** Use UV solder mask on the `A` point. It's a very fragile point and is not something you want to have to potentially resolder in the future.
 
 
 14. Turn the console back around and locate the eMMC chip at the top left of the motherboard. Remove a part of the top side of the frame, then slide your DAT0 adapter underneath the eMMC chip until the markings on the adapter line up with the outline of the eMMC chip.
 
 15. Use tweezers to push the DAT0 adapter into the solder ball underneath the eMMC chip (be careful while doing this, don't put too much pressure on it) and solder the anker point of the DAT0 adapter to a part of the anker points the frame was attached to on the motherboard. Make sure you keep pressure on the DAT0 adapter until you've soldered the anker points down. This is your `C`(DAT0) point.
-      - Optional: Test the C point by putting the negative lead of your multimeter on the `C` point of the DAT0 adapter and putting your positive lead on ground. You should end up with a value in between ~0.500-0.850 generally speaking. This value is measured in Diode mode on a multimeter. (As mentioned at the top of this page, the range differs from console to console and if it works for you, there is no issue.)
+      - **Optional:** Test the C point by putting the negative lead of your multimeter on the `C` point of the DAT0 adapter and putting your positive lead on ground. You should end up with a value in between ~0.500-0.850 generally speaking. This value is measured in Diode mode on a multimeter. (As mentioned at the top of this page, the range differs from console to console and if it works for you, there is no issue.)
 
 16. Solder a wire from the `C`(DAT0) point on the DAT0 adapter to the `C` point on the modchip.
 
@@ -105,7 +105,7 @@ Solder a wire to the `B` point and solder the other end of the wire to the `B` p
 23. Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
 
 24. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
-       - Optional: Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
+       - **Optional:** Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
 
 25. Plug the SoC ribbon cable into the port on the top left of the modchip, make sure you lift the locking tab up first before inserting it. Once inserted, lock the locking tab again.
 
@@ -113,11 +113,11 @@ Solder a wire to the `B` point and solder the other end of the wire to the `B` p
 
 27. Place a piece of double sided tape on top of the RAM section of the IHS, then place the modchip on top of it to secure it in place. Make sure no components (such as the SoC ribbon cable and wires you soldered onto the modchip) are under any kind of stress when doing this.
 
-28. Your Switch should now look like the image below. If it does, you can test power it on and you should be greeted with the "No SD Card" splash screen with the Picofly logo.
+28. Your Switch should now look like the image below. If it does, you can re-connect the battery and power it on. You should be greeted with the `No SD Card` splash screen with the Picofly logo.
 
 29. Place a piece of Kapton tape (or other non-conductive material) on top of the modchip and reassemble the console.
 
-30. Turn the Switch on and you should still end up at the "No SD Card" splash screen. If so, you've successfully followed and finished this guide.
+30. Turn the Switch on and you should still end up at the `No SD Card` splash screen. If so, you've successfully followed and finished this guide.
 
 -----
 

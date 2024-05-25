@@ -47,26 +47,94 @@ These values can differ from console to console. If your modchip installation wo
 #### Instructions:
 
 1. Unscrew the Switch's backplate.
+     ![back](/img/lite_img/back.JPG)
+     ![shield](/img/lite_img/shield.JPG)
 
 2. Remove the metal shield/cover.
+     ![internals](/img/lite_img/internals.JPG)
+
 
 3. Remove the heatpipe/heatsink.
+     ![heatsink](/img/lite_img/heatsink.JPG)
+
 
 4. Remove the IHS (Internal Heat Spreader) to expose the bare SoC die and RAM chips.
+     ![ihs-removed](/img/lite_img/ihs-removed.JPG)
 
-5. Remove and clean up the thermal paste on the SoC die and around/in-between the capacitors on the SoC using IPA.
+
+5. Remove and disconnect the Gamecard reader, then remove and clean up the thermal paste on the SoC die and around/in-between the capacitors on the SoC using IPA.
        - You can also clean off the thermal paste between the IHS and heatpipe/heatsink in the meantime, the red-ish colored thermal goop between the heatpipe/heatsink and metal shield/cover can be left alone.
 
+     ![clean](/img/lite_img/clean.JPG)
+
 6. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable.
+     ![not-tinned](/img/lite_img/sp1-sp2/not-tinned.JPG)
+     ![tinned](/img/lite_img/sp1-sp2/tinned.JPG)
 
 7. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
+     ![bare-caps](/img/lite_img/soldering/bare-caps.jpg)
+     ![lined-up](/img/lite_img/soldering/lined-up.jpg)
+
 
 8. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly.
 
 9. Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
 
 10. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
-       - Optional: Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
+       - **Optional:** Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints. (I *did* do this but didn't take a photo of it.)
+
+     ![soldered-down](/img/lite_img/soldering/soldered-down.jpg)
+
+11. Tin the end of your wire and solder it to the `C` (DAT0) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `C` pad on the modchip.
+       - **Note:** These two pads are horizontally connected to each other. Bridging them will not cause any harm and is also the recommended thing to do.
+
+12. Tin the end of your wire and solder it to the `A` (CMD) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `A` pad on the modchip.
+       - **Note:** These two pads are horizontally connected to each other. Bridging them will not cause any harm and is also the recommended thing to do.
+
+13. Tin the end of your wire and solder it to the `D` (CLK) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `D` pad on the modchip.
+       - **Note:** These two pads are horizontally connected to each other. Bridging them will not cause any harm and is also the recommended thing to do.
+
+      ![cad](/img/lite_img/soldering/cad.jpg)
+
+14. Tin the end of your wire and solder it to the top end of the `3.3v` capacitor. Be careful once again and make sure you don't bridge this point with any pads next to it. Solder this piece of wire to the `3.3v` pad on the modchip.
+
+       - **Optional:** Use UV solder mask on this point. It's a fragile point and you won't want to have to resolder/rework it in the future.
+
+      ![3.3v](/img/lite_img/soldering/3.3v.jpg)
+
+15. Tin the end of your wire and solder it to the `B` (RST) pad on the motherboard. Be careful that you don't bridge the pads next to- and below these two pads. Solder this piece of wire to the `B` pad on the modchip.
+
+      ![b](/img/lite_img/soldering/b.jpg)
+
+16. Tin the end of your wire and solder it to a ground point on the motherboard. We will be using the point shown below. Once done, solder this piece of wire to the `GND`pad on the modchip.
+
+      ![gnd](/img/lite_img/soldering/gnd.jpg)
+
+17. Modify the left side (right side in the image below, as the IHS is upside down) of the IHS so that the SoC ribbon cable can fit through the left side of the IHS.
+
+      ![ihs-modified](/img/lite_img/ihs-modified.JPG)
+
+18.  Once done, connect the ribbon cable to the port on the modchip by bending the SoC ribbon cable accordingly. (Be careful!)
+       - **Optional:** At this point, you can test if your modchip installation was successful. Re-connect the battery and turn the console on, you should end up at a `No SD Card` splash screen with the Picofly logo.
+
+       ![test](/img/lite_img/test.JPG)
+
+
+19. Place/position the modchip on top of the eMMC's metal cover plate at the top left, next to the SoC's frame, and secure it in place by using double sided tape.
+
+20. If everything looks as expected (like the images below), you can continue with reassembling the console. (Don't forget to apply thermal paste!)
+
+      ![expected](/img/lite_img/expected.JPG)
+      ![ihs-on](/img/lite_img/ihs-on.JPG)
+
+
+21. Once the console is fully reassembled and you turn it on, you should still end up at the `No SD Card` splash screen. You've successfully installed the modchip.
+
+      ![heatsink-on](/img/lite_img/heatsink-on.JPG)
+      ![metal-on](/img/lite_img/metal-on.JPG)
+      ![backplate-on](/img/lite_img/backplate-on.JPG)
+      ![final](/img/lite_img/final.JPG)
+
 
 -----
 
