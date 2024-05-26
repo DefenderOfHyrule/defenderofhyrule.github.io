@@ -85,50 +85,52 @@ These values can differ from console to console. If your modchip installation wo
 
      ![soldered-down](/img/lite_img/soldering/soldered-down.jpg)
 
-11. Tin the end of your wire and solder it to the `C` (DAT0) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `C` pad on the modchip.
-       - **Note:** These two pads are horizontally connected to each other. Bridging them will not cause any harm and is also the recommended thing to do.
+11. The following pads are located directly to the right of the metal eMMC cover/frame. </br>
+    </br>
+    Tin the end of your wire and solder it to the `C` (DAT0, in red) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `C` pad on the modchip. </br>
+    </br>
+    Tin the end of your wire and solder it to the `A` (CMD, in green) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `A` pad on the
+    modchip.</br>
+    </br>
+    Tin the end of your wire and solder it to the `D` (CLK, in blue) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `D` pad on the modchip. </br>
+       - **Note:** Each set of two pads are horizontally connected to each other. Bridging them will not cause any harm and is also the recommended thing to do.
+    ![cad](/img/lite_img/soldering/cad.jpg)
 
-12. Tin the end of your wire and solder it to the `A` (CMD) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `A` pad on the modchip.
-       - **Note:** These two pads are horizontally connected to each other. Bridging them will not cause any harm and is also the recommended thing to do.
-
-13. Tin the end of your wire and solder it to the `D` (CLK) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `D` pad on the modchip.
-       - **Note:** These two pads are horizontally connected to each other. Bridging them will not cause any harm and is also the recommended thing to do.
-
-      ![cad](/img/lite_img/soldering/cad.jpg)
-
-14. Tin the end of your wire and solder it to the top end of the `3.3v` capacitor. Be careful once again and make sure you don't bridge this point with any pads next to it. Solder this piece of wire to the `3.3v` pad on the modchip.
+12. This capacitor is located next to the bottom right of the Gamecard reader's plastic frame. </br>
+    </br>
+    Tin the end of your wire and solder it to the top end of the `3.3v` capacitor. Be careful once again and make sure you don't bridge this point with any pads next to it. Solder this piece of wire to the `3.3v` pad on the modchip.
 
        - **Optional:** Use UV solder mask on this point. It's a fragile point and you won't want to have to resolder/rework it in the future.
 
       ![3.3v](/img/lite_img/soldering/3.3v.jpg)
 
-15. Tin the end of your wire and solder it to the `B` (RST) pad on the motherboard. Be careful that you don't bridge the pads next to- and below these two pads. Solder this piece of wire to the `B` pad on the modchip.
+13. Tin the end of your wire and solder it to the `B` (RST) pad on the motherboard. Be careful that you don't bridge the pads next to- and below these two pads. Solder this piece of wire to the `B` pad on the modchip.
 
       ![b](/img/lite_img/soldering/b.jpg)
 
-16. Tin the end of your wire and solder it to a ground point on the motherboard. We will be using the point shown below. Once done, solder this piece of wire to the `GND`pad on the modchip.
+14. Tin the end of your wire and solder it to a ground point on the motherboard. We will be using the point shown below (located to the bottom left of the fan, above the RAM chips). Once done, solder this piece of wire to the `GND`pad on the modchip.
 
       ![gnd](/img/lite_img/soldering/gnd.jpg)
 
-17. Modify the left side (right side in the image below, as the IHS is upside down) of the IHS so that the SoC ribbon cable can fit through the left side of the IHS.
+15. Modify the left side (right side in the image below, as the IHS is upside down) of the IHS so that the SoC ribbon cable can fit through the left side of the IHS.
 
       ![ihs-modified](/img/lite_img/ihs-modified.JPG)
 
-18.  Once done, connect the ribbon cable to the port on the modchip by bending the SoC ribbon cable accordingly. (Be careful!)
+16.  Once done, connect the ribbon cable to the port on the modchip by bending the SoC ribbon cable accordingly. (Be careful!)
        - **Optional:** At this point, you can test if your modchip installation was successful. Re-connect the battery and turn the console on, you should end up at a `No SD Card` splash screen with the Picofly logo.
 
        ![test](/img/lite_img/test.JPG)
 
 
-19. Place/position the modchip on top of the eMMC's metal cover plate at the top left, next to the SoC's frame, and secure it in place by using double sided tape.
+17. Place/position the modchip on top of the eMMC's metal cover plate at the top left, next to the SoC's frame, and secure it in place by using double sided tape.
 
-20. If everything looks as expected (like the images below), you can continue with reassembling the console. (Don't forget to apply thermal paste!)
+18. If everything looks as expected (like the images below), you can continue with reassembling the console. (Don't forget to apply thermal paste!)
 
       ![expected](/img/lite_img/expected.JPG)
       ![ihs-on](/img/lite_img/ihs-on.JPG)
 
 
-21. Once the console is fully reassembled and you turn it on, you should still end up at the `No SD Card` splash screen. You've successfully installed the modchip.
+19. Once the console is fully reassembled and you turn it on, you should still end up at the `No SD Card` splash screen. You've successfully installed the modchip.
 
       ![heatsink-on](/img/lite_img/heatsink-on.JPG)
       ![metal-on](/img/lite_img/metal-on.JPG)
