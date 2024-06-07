@@ -6,7 +6,7 @@ hide:
 
 ### **The Installation**
 
-This page will guide you through the modchip installation process on "OLED" model Switch consoles. Everything you need will be listed and pictures of what your solder joints should look like will be posted by each step.
+This page will guide you through the modchip installation process on "OLED" model Switch consoles. Everything you need will be listed and pictures of what your solder joints should (roughly) look like will be posted by each step.
 Specific steps such as photos of the screws you need to unscrew aren't mentioned here as they can be found on guides from iFixit (for example). It's expected for you to know what to unscrew.
 
 #### Diode reading values
@@ -19,7 +19,7 @@ These values can differ from console to console. If your modchip installation wo
 | **SP2** `~0.25`           | **SP2** `~0.20`              |
 | **A** (CMD) `~0.470`      | **A** (CMD) `~0.875`         |
 | **B** (RST) `~0.405`      | **B** (RST) `OL`             |
-| **C** (DAT0) `~0.435`     | **C** (DAT0) `~0.500-0.850`  |
+| **C** (DAT0) `~0.435`     | **C** (DAT0) `~0.450-0.850`  |
 | **D** (CLK) `~0.440`      | **D** (CLK) `~0.880`         |
 | **3.3v** `~0.445`         | **3.3v** `~0.850`            |
 
@@ -48,76 +48,115 @@ These values can differ from console to console. If your modchip installation wo
 #### Instructions:
 
 1. Unscrew the Switch's backplate.
+![back](../img/oled_img/back.JPG)
+![shield](../img/oled_img/shield.JPG)
 
 2. Remove the metal shield/cover (be careful with the antennas that are routed across the metal shield/cover) and disconnect the battery at the bottom right of the motherboard.
+![shield-removed](../img/oled_img/shield-removed.JPG)
 
 3. Remove the Gamecard reader/SD card reader board.
+![gc-board-removed](../img/oled_img/gc-board-removed.JPG)
 
 4. Remove the heatpipe/heatsink.
+![heatsink-removed](../img/oled_img/heatsink-removed.JPG)
 
 5. Remove the IHS (Internal Heat Spreader) to expose the bare SoC die and RAM chips.
+![ihs-removed](../img/oled_img/ihs-removed.JPG)
 
 6. Remove and clean up the thermal paste on the SoC die and around/in-between the capacitors on the SoC using IPA.
        - You can also clean off the thermal paste between the IHS and heatpipe/heatsink in the meantime, the red-ish colored thermal goop between the heatpipe/heatsink and metal shield/cover can be left alone.
+![clean-soc](../img/oled_img/clean-soc.JPG)
+![clean-soc-2](../img/oled_img/clean-soc-2.JPG)
 
 7. Remove the fan and unplug the fan ribbon cable, joycon rail ribbon cables, screen ribbon cable and speaker connectors.
 
 8. Unscrew and remove the bottom bar of the shell.
 
 9. Remove the motherboard from the Switch casing.
+![bare-mobo](../img/oled_img/bare-mobo.JPG)
 
 10. Remove the metal plate covering the eMMC chip on the back of the motherboard.
+![emmc-shield](../img/oled_img/emmc-shield.JPG)
 
 11. Turn the motherboard back around, remove a part of the SoC/RAM frame next to the `D`(CLK) point and scrape away the `D`(CLK) point on the motherboard using a thin and sharp metal tool until the pad underneath is visible and open to the air (otherwise you won't be able to follow along with the next step).
+![bare-d](../img/oled_img/soldering/bare-d.jpg)
+![d-exposed](../img/oled_img/soldering/d-exposed.jpg)
 
 12. Tin the `D`(CLK) point and wire, then solder a piece of your wire to the `D` point and solder it to the `D` point on the modchip.
 
-
-      - **Optional:** Use UV solder mask on the `D` point. It's a very fragile point and is not something you want to have to potentially resolder in the future.
-
+      - **Optional:** Use UV solder mask on the `D` point. It's a very fragile point and is not something you want to have to potentially resolder in the future. </br>
+      ![d-soldered](../img/oled_img/soldering/d-soldered.jpg)
 
 13. Tin your wire and solder a piece of wire to the bottom end of the `A`(CMD) resistor, then solder the other end of the wire to the `A` point on the modchip. Be careful, as heating this resistor up too much has the chance to kill the resistor or will cause it to stick to your soldering iron and wipe it off of the motherboard completely (this only happens if your soldering iron is too hot and hold it on the resistor for too long).
 
+      - **Optional:** Use UV solder mask on the `A` point. It's a very fragile point and is not something you want to have to potentially resolder in the future. </br>
+      ![bare-a](../img/oled_img/soldering/bare-a.jpg)
+      ![a-soldered](../img/oled_img/soldering/a-soldered.jpg)
 
-      - **Optional:** Use UV solder mask on the `A` point. It's a very fragile point and is not something you want to have to potentially resolder in the future.
 
+14. Turn the console back around and locate the eMMC chip at the top left of the motherboard. Remove a part of the top side of the frame, then slide your DAT0 adapter underneath the eMMC chip until the markings on the adapter line up with the outline of the eMMC chip. </br>
+    </br>
+    Use tweezers to push the DAT0 adapter into the solder ball underneath the eMMC chip (be careful while doing this, don't put too much pressure on it) and solder the anker point of the DAT0 adapter to a part of the anker points the frame was attached to on the motherboard. Make sure you keep pressure on the DAT0 adapter until you've soldered the anker points down. This is your `C`(DAT0) point.
+      - **Note:** The images below are ***not*** the best example as the mounting pads for the frame around the eMMC were torn off due to me being suddenly distracted. The DAT0 adapter is properly placed however, I fixed the mounting pads being torn off by scraping away part of the ground plane towards the top of the motherboard and mounting/attaching the DAT0 adapter to that area.
+      - **Optional:** Test the C point by putting the negative lead of your multimeter on the `C` point of the DAT0 adapter and putting your positive lead on ground. You should end up with a value in between ~0.450-0.850 generally speaking. This value is measured in Diode mode on a multimeter. (As mentioned at the top of this page, the range differs from console to console and if it works for you, there is no issue.)
+      ![dat0-untouched](../img/oled_img/soldering/dat0-untouched.jpg)
+      ![awful-frame](../img/oled_img/soldering/badly-removed-frame.jpg)
+      ![dat0-fix](../img/oled_img/soldering/dat0-fix.jpg)
 
-14. Turn the console back around and locate the eMMC chip at the top left of the motherboard. Remove a part of the top side of the frame, then slide your DAT0 adapter underneath the eMMC chip until the markings on the adapter line up with the outline of the eMMC chip.
-
-15. Use tweezers to push the DAT0 adapter into the solder ball underneath the eMMC chip (be careful while doing this, don't put too much pressure on it) and solder the anker point of the DAT0 adapter to a part of the anker points the frame was attached to on the motherboard. Make sure you keep pressure on the DAT0 adapter until you've soldered the anker points down. This is your `C`(DAT0) point.
-      - **Optional:** Test the C point by putting the negative lead of your multimeter on the `C` point of the DAT0 adapter and putting your positive lead on ground. You should end up with a value in between ~0.500-0.850 generally speaking. This value is measured in Diode mode on a multimeter. (As mentioned at the top of this page, the range differs from console to console and if it works for you, there is no issue.)
-
-16. Solder a wire from the `C`(DAT0) point on the DAT0 adapter to the `C` point on the modchip.
+16. Solder a wire from the `C`(DAT0) point on the DAT0 adapter (in this case, it's called `D0`) to the `C` point on the modchip.
 
 17. Turn the motherboard back around and locate the `3.3v` capacitors near the top-middle of the motherboard. Solder a piece of wire to the bottom end of the right capacitor and solder the other end of the wire to the `3.3v` pad on the modchip.
+![bare-3.3.v](../img/oled_img/soldering/bare-3.3v.jpg)
 
 18. Locate the `GND` (ground) pad on the middle-right side of the motherboard. Solder a piece of wire to it and solder the other end of the wire to the `GND` pad on the modchip.
+![bare-gnd](../img/oled_img/soldering/bare-gnd.jpg)
+![gnd-soldered](../img/oled_img/soldering/gnd-soldered.jpg)
+
 
 19. Turn the motherboard back around and locate the `B` point on the back of the motherboard. It's located at the very bottom of the motherboard, to the left of the C shaped "cutout" for the left speaker cable.
 Solder a wire to the `B` point and solder the other end of the wire to the `B` point at the bottom of your modchip.
+![bare-b](../img/oled_img/soldering/bare-b.jpg)
+![b-soldered](../img/oled_img/soldering/b-soldered.jpg)
+
 
 20. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable.
+![not-tinned](../img/oled_img/sp1-sp2/not-tinned.jpg)
+![tinned](../img/oled_img/sp1-sp2/tinned.jpg)
+
 
 21. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
+![bare-capacitors](../img/oled_img/soldering/bare-capacitors.jpg)
+![lined-up](../img/oled_img/soldering/lined-up.jpg)
 
-22. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly.
-
-23. Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
+22. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly. </br>
+    Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
+![soldered-down](../img/oled_img/soldering/soldered-down.jpg)
 
 24. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
-       - **Optional:** Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
+      - **Optional:** Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints. </br>
+![kapton-tape](../img/oled_img/kapton-tape.JPG)
 
 25. Plug the SoC ribbon cable into the port on the top left of the modchip, make sure you lift the locking tab up first before inserting it. Once inserted, lock the locking tab again.
+![test-setup](../img/oled_img/test-setup.JPG)
 
 26. Modify the IHS to make the SoC ribbon cable fit out of the top of the SoC section of the IHS and reinstall the IHS. (Don't forget to apply thermal paste in between the SoC and IHS!)
+![ihs-modified](../img/oled_img/ihs-modified.JPG)
 
 27. Place a piece of double sided tape on top of the RAM section of the IHS, then place the modchip on top of it to secure it in place. Make sure no components (such as the SoC ribbon cable and wires you soldered onto the modchip) are under any kind of stress when doing this.
+![test-setup-2](../img/oled_img/test-setup-2.JPG)
 
-28. Your Switch should now look like the image below. If it does, you can re-connect the battery and power it on. You should be greeted with the `No SD Card` splash screen with the Picofly logo.
+28. Your Switch should now look like the image below. If it does, you can re-connect the battery connector, power button board and screen ribbon cable and power the console on after the the modchip glitches and trains (blinks blue, then white). You should be greeted with the `No SD Card` splash screen with the Picofly logo.
+![test-setup-2](../img/oled_img/test-setup-2.JPG)
+![test-setup-3](../img/oled_img/test-setup-3.JPG)
 
 29. Place a piece of Kapton tape (or other non-conductive material) on top of the modchip and reassemble the console.
+![assembly-1](../img/oled_img/assembly-1.JPG)
+![assembly-2](../img/oled_img/assembly-2.JPG)
+![assembly-3](../img/oled_img/assembly-3.JPG)
+![assembly-4](../img/oled_img/assembly-4.JPG)
 
 30. Turn the Switch on and you should still end up at the `No SD Card` splash screen. If so, you've successfully followed and finished this guide.
+![assembly-5](../img/oled_img/assembly-5.JPG)
 
 -----
 

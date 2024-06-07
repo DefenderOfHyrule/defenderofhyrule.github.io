@@ -6,7 +6,7 @@ hide:
 
 ### **The Installation**
 
-This page will guide you through the modchip installation process on "Normal" model Switch consoles. Everything you need will be listed and pictures of what your solder joints should look like will be posted by each step.
+This page will guide you through the modchip installation process on "Normal" model Switch consoles. Everything you need will be listed and pictures of what your solder joints should (roughly) look like will be posted by each step.
 Specific steps such as photos of the screws you need to unscrew aren't mentioned here as they can be found on guides from iFixit (for example). It's expected for you to know what to unscrew.
 
 #### Diode reading values

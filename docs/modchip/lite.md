@@ -6,7 +6,7 @@ hide:
 
 ### **The Installation**
 
-This page will guide you through the modchip installation process on "Lite" model Switch consoles. Everything you need will be listed and pictures of what your solder joints should look like will be posted by each step.
+This page will guide you through the modchip installation process on "Lite" model Switch consoles. Everything you need will be listed and pictures of what your solder joints should (roughly) look like will be posted by each step.
 Specific steps such as photos of the screws you need to unscrew aren't mentioned here as they can be found on guides from iFixit (for example). It's expected for you to know what to unscrew.
 
 #### Diode reading values
@@ -94,6 +94,7 @@ These values can differ from console to console. If your modchip installation wo
     </br>
     Tin the end of your wire and solder it to the `D` (CLK, in blue) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `D` pad on the modchip. </br>
        - **Note:** Each set of two pads are horizontally connected to each other. Bridging them will not cause any harm and is also the recommended thing to do.
+    ![cad-untouched](/img/lite_img/soldering/cad-untouched.jpg)
     ![cad](/img/lite_img/soldering/cad.jpg)
 
 12. This capacitor is located next to the bottom right of the Gamecard reader's plastic frame. </br>
