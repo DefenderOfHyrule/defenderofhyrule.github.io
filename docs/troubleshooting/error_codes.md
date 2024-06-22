@@ -72,15 +72,21 @@ This was made possible by using Pi Pico debugging and getting rid of RGB/GRB iss
 
     **Answer:** Make sure your SD card is inserted fully. If it is, your Switch's SD card reader may be malfunctioning. Test it with another SD card and if it also doesn't work, check the FPC port on the motherboard and SD card reader connector for any missing pins (Normal model Switch users). The SD card reader/game card reader board may need to be replaced if on an OLED Switch and the soldered on SD card reader may have to be replaced if on a Switch Lite.
 
-
-!!! note "**Question:** It says `Payload size too large!` when I turn my console on, what do I do?"
-
-    **Answer:** Make sure the payload size is less than 122KB. If you get this error, you're *very* likely using the wrong payload and should re-read the instructions mentioned in the NH-Server guide.
-
-
 !!! note "**Question:** It says `Failed to mount SD Card!` when I turn my console on, what do I do?"
 
     **Answer:** Your SD card isn't formatted and/or partitioned correctly. The payload *has* to be placed on the first partition of the SD card and *has* to be formatted as `FAT32` or `exFAT` (`FAT32` being the best option out of the two) for the SD card to be able to be mounted (accessible for the modchip and `sdloader`). Another cause of this issue can be due to SD card corruption and would require you to perform SD card integrity checks, for which a guide on how to do so can be found [here](https://wiki.hacks.guide/wiki/Checking_SD_card_integrity).
+
+!!! note "**Question:** It says `Payload size too large!` when I turn my console on, what do I do?"
+
+    **Answer:** Make sure the payload size is equal to/-or less than 128KB. If you get this error, you're *very* likely using the wrong payload and should re-read the instructions mentioned in the NH-Server guide.
+
+!!! note "**Question:** It says `Failed to open payload!` when I turn my console on, what do I do?"
+
+    **Answer:** The payload on the root of your SD card is likely missing or has the wrong file name. Make sure `payload.bin` exists on the root of the SD card and that you have file extensions enabled on the OS you're using. The file name *has* to be `payload.bin` and *not* `payload.bin.bin` for example (this can happen if you do not have file extensions enabled).
+
+!!! note "**Question:** It says `Payload is less than 128KB!` when I turn my console on, what do I do?"
+
+    **Answer:** Make sure the payload size is equal to/-or less than 128KB. If you get this error, you're *very* likely using the wrong payload and should re-read the instructions mentioned in the NH-Server guide.
 
 -----
 

@@ -85,6 +85,7 @@ These values can differ from console to console. If your modchip installation wo
 12. Tin the `D`(CLK) point and wire, then solder a piece of your wire to the `D` point and solder it to the `D` point on the modchip.
 
       - **Optional:** Use UV solder mask on the `D` point. It's a very fragile point and is not something you want to have to potentially resolder in the future. </br>
+      ![d-solder](../img/oled_img/soldering/d-solder.jpg)
       ![d-soldered](../img/oled_img/soldering/d-soldered.jpg)
 
 13. Tin your wire and solder a piece of wire to the bottom end of the `A`(CMD) resistor, then solder the other end of the wire to the `A` point on the modchip. Be careful, as heating this resistor up too much has the chance to kill the resistor or will cause it to stick to your soldering iron and wipe it off of the motherboard completely (this only happens if your soldering iron is too hot and hold it on the resistor for too long).
@@ -96,17 +97,20 @@ These values can differ from console to console. If your modchip installation wo
 
 14. Turn the console back around and locate the eMMC chip at the top left of the motherboard. Remove a part of the top side of the frame, then slide your DAT0 adapter underneath the eMMC chip until the markings on the adapter line up with the outline of the eMMC chip. </br>
     </br>
-    Use tweezers to push the DAT0 adapter into the solder ball underneath the eMMC chip (be careful while doing this, don't put too much pressure on it) and solder the anker point of the DAT0 adapter to a part of the anker points the frame was attached to on the motherboard. Make sure you keep pressure on the DAT0 adapter until you've soldered the anker points down. This is your `C`(DAT0) point.
-      - **Note:** The images below are ***not*** the best example as the mounting pads for the frame around the eMMC were torn off due to me being suddenly distracted. The DAT0 adapter is properly placed however, I fixed the mounting pads being torn off by scraping away part of the ground plane towards the top of the motherboard and mounting/attaching the DAT0 adapter to that area.
+Use tweezers to push the DAT0 adapter into the solder ball underneath the eMMC chip (be careful while doing this, don't put too much pressure on it) and solder the anker point of the DAT0 adapter to a part of the anker points the frame was attached to on the motherboard. Make sure you keep pressure on the DAT0 adapter until you've soldered the anker points down. This is your `C`(DAT0) point.
+![dat0-untouched](../img/oled_img/soldering/dat0-untouched.jpg)
+![dat0-adapter](../img/oled_img/soldering/dat0-adapter.jpg)
+![dat0-slid](../img/oled_img/soldering/dat0-slid.jpg)
+![dat0-soldered](../img/oled_img/soldering/dat0-soldered.jpg)
       - **Optional:** Test the C point by putting the negative lead of your multimeter on the `C` point of the DAT0 adapter and putting your positive lead on ground. You should end up with a value in between ~0.450-0.850 generally speaking. This value is measured in Diode mode on a multimeter. (As mentioned at the top of this page, the range differs from console to console and if it works for you, there is no issue.)
-      ![dat0-untouched](../img/oled_img/soldering/dat0-untouched.jpg)
-      ![awful-frame](../img/oled_img/soldering/badly-removed-frame.jpg)
-      ![dat0-fix](../img/oled_img/soldering/dat0-fix.jpg)
+
+      </br>
 
 16. Solder a wire from the `C`(DAT0) point on the DAT0 adapter (in this case, it's called `D0`) to the `C` point on the modchip.
 
 17. Turn the motherboard back around and locate the `3.3v` capacitors near the top-middle of the motherboard. Solder a piece of wire to the bottom end of the right capacitor and solder the other end of the wire to the `3.3v` pad on the modchip.
 ![bare-3.3.v](../img/oled_img/soldering/bare-3.3v.jpg)
+![3.3v-soldered](../img/oled_img/soldering/3.3v-soldered.jpg)
 
 18. Locate the `GND` (ground) pad on the middle-right side of the motherboard. Solder a piece of wire to it and solder the other end of the wire to the `GND` pad on the modchip.
 ![bare-gnd](../img/oled_img/soldering/bare-gnd.jpg)
