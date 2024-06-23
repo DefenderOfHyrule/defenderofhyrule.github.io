@@ -149,7 +149,7 @@ Solder a wire to the `B` point and solder the other end of the wire to the `B` p
 27. Place a piece of double sided tape on top of the RAM section of the IHS, then place the modchip on top of it to secure it in place. Make sure no components (such as the SoC ribbon cable and wires you soldered onto the modchip) are under any kind of stress when doing this.
 ![test-setup-2](../img/oled_img/test-setup-2.JPG)
 
-28. Your Switch should now look like the image below. If it does, you can re-connect the battery connector, power button board and screen ribbon cable and power the console on after the the modchip glitches and trains (blinks blue, then white). You should be greeted with the `No SD Card` splash screen with the Picofly logo.
+28. Your Switch should now look like the image below. If it does, you can re-connect the battery connector, power button board and screen ribbon cable and power the console on after the modchip glitches and trains (blinks blue, then white). You should be greeted with the `No SD Card` splash screen with the Picofly logo.
 ![test-setup-2](../img/oled_img/test-setup-2.JPG)
 ![test-setup-3](../img/oled_img/test-setup-3.JPG)
 

@@ -19,7 +19,7 @@ These values can differ from console to console. If your modchip installation wo
 | **SP2** `~0.12`           | **SP2** `~0.10`              |
 | **A** (CMD) `~0.470`      | **A** (CMD) `~0.875`         |
 | **B** (RST) `~0.405`      | **B** (RST) `OL`             |
-| **C** (DAT0) `~0.435`     | **C** (DAT0) `~0.500-0.850`  |
+| **C** (DAT0) `~0.435`     | **C** (DAT0) `~0.450-0.850`  |
 | **D** (CLK) `~0.440`      | **D** (CLK) `~0.880`         |
 | **3.3v** `~0.445`         | **3.3v** `~0.850`            |
 
@@ -118,7 +118,7 @@ These values can differ from console to console. If your modchip installation wo
       ![ihs-modified](/img/lite_img/ihs-modified.JPG)
 
 16.  Once done, connect the ribbon cable to the port on the modchip by bending the SoC ribbon cable accordingly. (Be careful!)
-       - **Optional:** At this point, you can test if your modchip installation was successful. Re-connect the battery and turn the console on, you should end up at a `No SD Card` splash screen with the Picofly logo.
+       - **Optional:** At this point, you can test if your modchip installation was successful. Re-connect the battery and the screen ribbon cable, then turn the console on. You should end up at a `No SD Card` splash screen with the Picofly logo.
 
        ![test](/img/lite_img/test.JPG)
 
