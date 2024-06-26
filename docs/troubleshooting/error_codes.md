@@ -80,7 +80,7 @@ This was made possible by using Pi Pico debugging and getting rid of RGB/GRB iss
 
     **Answer:** Make sure the payload size is equal to/-or less than 128KB. If you get this error, you're *very* likely using the wrong payload and should re-read the instructions mentioned in the NH-Server guide.
 
-!!! note "**Question:** It says `Failed to open payload!` when I turn my console on, what do I do?"
+!!! note "**Question:** It says `Failed to open payload.bin!` when I turn my console on, what do I do?"
 
     **Answer:** The payload on the root of your SD card is likely missing or has the wrong file name. Make sure `payload.bin` exists on the root of the SD card and that you have file extensions enabled on the OS you're using. The file name *has* to be `payload.bin` and *not* `payload.bin.bin` for example (this can happen if you do not have file extensions enabled).
 

@@ -102,6 +102,8 @@ These values can differ from console to console. If your modchip installation wo
 
 From here, if you get the same result as I did, you can continue following the NH Server guide to set up CFW by clicking the button below. If you want to know more about the functionality of modchips, visit the [**Functionality of modchips**](../functionality/functionality_of_modchips.md) page.
 
+If you'd like to donate to me, visit the [**Credits**](../credits/credits.md) section.
+
 [Continue to the NH Server guide :material-arrow-right:](https://nh-server.github.io/switch-guide/){ .md-button .md-button--primary }
 
 !!! danger ""
