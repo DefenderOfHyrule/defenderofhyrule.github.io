@@ -12,18 +12,19 @@ That being said, I do recommend updating your modchip's firmware to the latest f
 
     - <a href="https://github.com/DefenderOfHyrule/usk/releases/tag/2.75">https://github.com/DefenderOfHyrule/usk/releases/tag/2.75</a>
 
-2. Place `update.bin` on the root of your SD card
+2. Place `update.bin` on the root of your SD card.
 
-3. Place `picofly_toolbox_0.2.bin` in `sd:/bootloader/payloads`
+3. Place `picofly_toolbox_0.2.bin` in `sd:/bootloader/payloads`.
 
-4. Boot into hekate and go to `Payloads` > `picofly_toolbox_0.2.bin`
+4. Boot into hekate and go to `Payloads` > `picofly_toolbox_0.2.bin`.
 
 5. Press `Info` underneath the `Firmware` section to see the information about the firmware version you're running. Press any key (the Volume or Power buttons) to return to the previous menu.
     - If it's running version `2.75`, you're already up to date and do not need to update.
+    - **Note:** *Some* Picofly modchips come pre-flashed with a fork of the spacecraft-nx firmware for hwfly modchips (the `NO SD` screen with the interactive rocket when you turn the Switch on without SD card inserted). You should *not* use this firmware as it is unstable and can cause things like Android/Linux to not boot at all (if relevant to your situation), slow boot times and it can potentially shorten the lifespan of your modchip. *If* you have this firmware version, the `Info` menu will not report a firmware version and will only show `Reading firmware info...` and this means that you should update your modchip's firmware.
 
 6. Select `Update` in the `Firmware` section and wait for it to finish updating the modchip's firmware from `update.bin` located on the root of your SD card. (This shouldn't take more than 1-2 seconds.)
 
-    - Note: Updating `sdloader` is not necessary for Picofly modchips as updating its firmware automatically updates `sdloader` as well.
+    - **Note:** Updating `sdloader` is not necessary for Picofly modchips as updating its firmware automatically updates `sdloader` as well.
 
 7. Power the console off by pressing any key and selecting `Power off`, then turn it back on.
 

@@ -118,6 +118,6 @@ You can solder two additional wires to your development board so it can lower th
 
 The following information was obtained from [this github repository](https://github.com/hwfly-nx/firmware):
 
-- Note: We do *not* assist with Hwfly/Instinct-NX based modchips in the NH Discord server. This section solely exists for your own troubleshooting purposes.
+- **Note:** We do *not* assist with Hwfly/Instinct-NX based modchips in the NH Discord server. This section solely exists for your own troubleshooting purposes.
 
 ![hwfly-error-codes](../img/general_img/troubleshooting/hwfly-error-codes.gif)
