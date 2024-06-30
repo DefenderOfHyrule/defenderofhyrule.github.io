@@ -147,7 +147,7 @@ From here, if you get the same result as I did, you can continue following the N
 
 If you'd like to donate to me, visit the [**Credits**](../credits/credits.md) section.
 
-[Continue to the NH Server guide :material-arrow-right:](https://nh-server.github.io/switch-guide/){ .md-button .md-button--primary }
+[Continue to the NH Server guide :material-arrow-right:](https://switch.hacks.guide/){ .md-button .md-button--primary }
 
 !!! danger ""
     If you didn't get the same result as I did and are running into issues, please follow the troubleshooting section of this guide.

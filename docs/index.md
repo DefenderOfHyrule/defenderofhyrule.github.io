@@ -8,6 +8,9 @@ hide:
 
 This guide will guide you through the installation of modchips, there are important things you should know before continuing with this guide.
 
+!!! info "Information"
+    If you came here from the NH Server guide, you're here to modchip your Switch. Follow along with this guide if you have the required skills to do so.
+
 -----
 
 #### Again, this guide is not for beginners and the Switch is not a good first project.
