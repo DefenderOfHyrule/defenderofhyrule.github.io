@@ -43,6 +43,9 @@ nav:
         - 'Modchip installation Switch': 'modchip/normal.md'
         - 'Modchip installation Switch Lite': 'modchip/lite.md'
         - 'Modchip installation Switch OLED': 'modchip/oled.md'
+        - C (DAT0) point methods:
+            - 'DAT0 Adapter method' : 'modchip/dat0-adapter.md'
+            - 'Kamikaze method' : 'modchip/kamikaze-method.md'
     - Functionality:
        -  'Functionality of modchips': 'functionality/functionality_of_modchips.md'
     - Troubleshooting:

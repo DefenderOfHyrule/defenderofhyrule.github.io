@@ -9,6 +9,8 @@ hide:
 This page will guide you through the modchip installation process on "OLED" model Switch consoles. Everything you need will be listed and pictures of what your solder joints should (roughly) look like will be posted by each step.
 Specific steps such as photos of the screws you need to unscrew aren't mentioned here as they can be found on guides from iFixit (for example). It's expected for you to know what to unscrew.
 
+-----
+
 #### Diode reading values
 
 These values can differ from console to console. If your modchip installation works fine and doesn't match these exact values, it's not an issue. These values can act as "indicators" about what you might expect. Especially the `C` (DAT0) point can have a large range of acceptable values.
@@ -33,13 +35,25 @@ These values can differ from console to console. If your modchip installation wo
 - Isopropyl Alcohol (preferably 95-99% IPA)
 - Your modchip (including the SoC ribbon cable and DAT0 adapter)
 - Kapton tape (optional, but recommended)
-- A dental pick or other thin and sharp tool (to scrape away the top layer of the PCB for the B point)
+- A dental pick or other thin and sharp tool (to scrape away the top layer of the PCB for the D point)
 - Toothpicks/Q-tips (to remove the thermal paste between the capacitors on the SoC)
 - Soldering tin (leaded is recommended, unleaded will work depending on your skill level)
 - Double sided tape
 - A fume extractor (for your own health and safety)
 - A microscope (optional but recommended)
 - UV Solder mask (optional but recommended)
+
+#### Additional and/or optional requirements for the Kamikaze method:
+
+- A grinding pen such as the `MaAnt D2` with 0.2mm tip (Kamikaze method users **ONLY**)
+- 32-36 awg magnet/enameled wire (Kamikaze method users **ONLY**)
+- Solder with the width of 0.8mm or smaller
+- A soldering iron tip like the `TS-J02`
+- UV Solder mask
+- UV Light
+
+!!! danger "The Kamikaze method"
+     The Kamikaze method is *also* covered on this page, be aware that this is a ***VERY*** risky procedure and that you should not attempt this without the required skills/tools. You will find the divide between the DAT0 Adapter and Kamikaze methods at step 14.
 
 ??? note "Note for stock RP2040 Zero development board users"
      If you use a stock `RP2040 Zero` development board, you will need to desolder the USB-C port,`BOOT` and `RESET` buttons before continuing. You'll also need to purchase the SoC ribbon cable separately together with 5x `0805 47Ω +-1%` resistors (5x is recommended, 3x is possible in some instances).
@@ -75,7 +89,7 @@ These values can differ from console to console. If your modchip installation wo
 9. Remove the motherboard from the Switch casing.
 ![bare-mobo](../img/oled_img/bare-mobo.JPG)
 
-10. Remove the metal plate covering the eMMC chip on the back of the motherboard.
+10. Remove the metal plate covering the eMMC chip on the back of the motherboard. (Only for people following the DAT0 adapter method.)
 ![emmc-shield](../img/oled_img/emmc-shield.JPG)
 
 11. Turn the motherboard back around, remove a part of the SoC/RAM frame next to the `D`(CLK) point and scrape away the `D`(CLK) point on the motherboard using a thin and sharp metal tool until the pad underneath is visible and open to the air (otherwise you won't be able to follow along with the next step).
@@ -92,74 +106,73 @@ These values can differ from console to console. If your modchip installation wo
 
       - **Optional:** Use UV solder mask on the `A` point. It's a very fragile point and is not something you want to have to potentially resolder in the future. </br>
       ![bare-a](../img/oled_img/soldering/bare-a.jpg)
-      ![a-soldered](../img/oled_img/soldering/a-soldered.jpg)
+      ![a-soldered](../img/oled_img/soldering/a-soldered.jpg) </br>
 
+14. ### **`C`(DAT0) Point methods**
 
-14. Turn the console back around and locate the eMMC chip at the top left of the motherboard. Remove a part of the top side of the frame, then slide your DAT0 adapter underneath the eMMC chip until the markings on the adapter line up with the outline of the eMMC chip. </br>
-    </br>
-Use tweezers to push the DAT0 adapter into the solder ball underneath the eMMC chip (be careful while doing this, don't put too much pressure on it) and solder the anker point of the DAT0 adapter to a part of the anker points the frame was attached to on the motherboard. Make sure you keep pressure on the DAT0 adapter until you've soldered the anker points down. This is your `C`(DAT0) point.
-![dat0-untouched](../img/oled_img/soldering/dat0-untouched.jpg)
-![dat0-adapter](../img/oled_img/soldering/dat0-adapter.jpg)
-![dat0-slid](../img/oled_img/soldering/dat0-slid.jpg)
-![dat0-soldered](../img/oled_img/soldering/dat0-soldered.jpg)
-      - **Optional:** Test the C point by putting the negative lead of your multimeter on the `C` point of the DAT0 adapter and putting your positive lead on ground. You should end up with a value in between ~0.450-0.850 generally speaking. This value is measured in Diode mode on a multimeter. (As mentioned at the top of this page, the range differs from console to console and if it works for you, there is no issue.)
+      <div class="grid cards" markdown>
 
-      </br>
+      -   ### **DAT0 Adapter method (Recommended)**
+      [Continue to DAT0 Adapter method :material-arrow-right:](dat0-adapter.md){ .md-button .md-button--primary }
 
-16. Solder a wire from the `C`(DAT0) point on the DAT0 adapter (in this case, it's called `D0`) to the `C` point on the modchip.
+      -   ### **Kamikaze method (ADVANCED USERS ONLY!)**
+      [Continue to Kamikaze method :material-arrow-right:](kamikaze-method.md){ .md-button .md-button--primary }
 
-17. Turn the motherboard back around and locate the `3.3v` capacitors near the top-middle of the motherboard. Solder a piece of wire to the bottom end of the right capacitor and solder the other end of the wire to the `3.3v` pad on the modchip.
+      </div>
+</br>
+
+15. Now, we will locate the `3.3v` capacitors near the top-middle on the front of the motherboard. Solder a piece of wire to the bottom end of the right capacitor and solder the other end of the wire to the `3.3v` pad on the modchip.
 ![bare-3.3.v](../img/oled_img/soldering/bare-3.3v.jpg)
 ![3.3v-soldered](../img/oled_img/soldering/3.3v-soldered.jpg)
 
-18. Locate the `GND` (ground) pad on the middle-right side of the motherboard. Solder a piece of wire to it and solder the other end of the wire to the `GND` pad on the modchip.
+16. Locate the `GND` (ground) pad on the middle-right side of the motherboard. Solder a piece of wire to it and solder the other end of the wire to the `GND` pad on the modchip.
 ![bare-gnd](../img/oled_img/soldering/bare-gnd.jpg)
 ![gnd-soldered](../img/oled_img/soldering/gnd-soldered.jpg)
 
 
-19. Turn the motherboard back around and locate the `B` point on the back of the motherboard. It's located at the very bottom of the motherboard, to the left of the C shaped "cutout" for the left speaker cable.
+17. Turn the motherboard back around and locate the `B` point on the back of the motherboard. It's located at the very bottom of the motherboard, to the left of the C shaped "cutout" for the left speaker cable.
 Solder a wire to the `B` point and solder the other end of the wire to the `B` point at the bottom of your modchip.
 ![bare-b](../img/oled_img/soldering/bare-b.jpg)
 ![b-soldered](../img/oled_img/soldering/b-soldered.jpg)
 
 
-20. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable.
+18. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable.
 ![not-tinned](../img/oled_img/sp1-sp2/not-tinned.jpg)
 ![tinned](../img/oled_img/sp1-sp2/tinned.jpg)
 
 
-21. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
+19. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
 ![bare-capacitors](../img/oled_img/soldering/bare-capacitors.jpg)
 ![lined-up](../img/oled_img/soldering/lined-up.jpg)
 
-22. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly. </br>
+20. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly. </br>
     Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
 ![soldered-down](../img/oled_img/soldering/soldered-down.jpg)
 
-24. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
+21. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
       - **Optional:** Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints. </br>
 ![kapton-tape](../img/oled_img/kapton-tape.JPG)
 
-25. Plug the SoC ribbon cable into the port on the top left of the modchip, make sure you lift the locking tab up first before inserting it. Once inserted, lock the locking tab again.
+22. Plug the SoC ribbon cable into the port on the top left of the modchip, make sure you lift the locking tab up first before inserting it. Once inserted, lock the locking tab again.
 ![test-setup](../img/oled_img/test-setup.JPG)
 
-26. Modify the IHS to make the SoC ribbon cable fit out of the top of the SoC section of the IHS and reinstall the IHS. (Don't forget to apply thermal paste in between the SoC and IHS!)
+23. Modify the IHS to make the SoC ribbon cable fit out of the top of the SoC section of the IHS and reinstall the IHS. (Don't forget to apply thermal paste in between the SoC and IHS!)
 ![ihs-modified](../img/oled_img/ihs-modified.JPG)
 
-27. Place a piece of double sided tape on top of the RAM section of the IHS, then place the modchip on top of it to secure it in place. Make sure no components (such as the SoC ribbon cable and wires you soldered onto the modchip) are under any kind of stress when doing this.
+24. Place a piece of double sided tape on top of the RAM section of the IHS, then place the modchip on top of it to secure it in place. Make sure no components (such as the SoC ribbon cable and wires you soldered onto the modchip) are under any kind of stress when doing this.
 ![test-setup-2](../img/oled_img/test-setup-2.JPG)
 
-28. Your Switch should now look like the image below. If it does, you can re-connect the battery connector, power button board and screen ribbon cable and power the console on. After the modchip glitches and trains (blinks blue, then white), you should be greeted with the `No SD Card` splash screen with the Picofly logo.
+25. Your Switch should now look like the image below. If it does, you can re-connect the battery connector, power button board and screen ribbon cable and power the console on. After the modchip glitches and trains (blinks blue, then white), you should be greeted with the `No SD Card` splash screen with the Picofly logo.
 ![test-setup-2](../img/oled_img/test-setup-2.JPG)
 ![test-setup-3](../img/oled_img/test-setup-3.JPG)
 
-29. Place a piece of Kapton tape (or other non-conductive material) on top of the modchip and reassemble the console.
+26. Place a piece of Kapton tape (or other non-conductive material) on top of the modchip and reassemble the console.
 ![assembly-1](../img/oled_img/assembly-1.JPG)
 ![assembly-2](../img/oled_img/assembly-2.JPG)
 ![assembly-3](../img/oled_img/assembly-3.JPG)
 ![assembly-4](../img/oled_img/assembly-4.JPG)
 
-30. Turn the Switch on and you should still end up at the `No SD Card` splash screen. If so, you've successfully followed and finished this guide.
+27. Turn the Switch on and you should still end up at the `No SD Card` splash screen. If so, you've successfully followed and finished this guide.
 ![assembly-5](../img/oled_img/assembly-5.JPG)
 
 -----
