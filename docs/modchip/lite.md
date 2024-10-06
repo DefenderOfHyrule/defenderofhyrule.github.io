@@ -130,7 +130,7 @@ These values can differ from console to console. If your modchip installation wo
 18. If everything looks as expected (like the images below), you can continue with reassembling the console. (Don't forget to apply thermal paste!)
 
       ![expected](../img/lite_img/expected.JPG)
-      ![ihs-on](../img/lite_img/ihs-on.JPG)
+      ![expected_alt](../img/lite_img/expected_alt.JPG)
 
 
 19. Once the console is fully reassembled and you turn it on, you should still end up at the `No SD Card` splash screen. You've successfully installed the modchip.
