@@ -121,8 +121,10 @@ These values can differ from console to console. If your modchip installation wo
 
 16.  Once done, connect the ribbon cable to the port on the modchip by bending the SoC ribbon cable accordingly. (Be careful!)
        - **Optional:** At this point, you can test if your modchip installation was successful. Re-connect the battery and the screen ribbon cable, then turn the console on. You should end up at a `No SD Card` splash screen with the Picofly logo.
+       - **Note:** Getting to the `No SD Card` screen does not *always* indicate success. Sometimes solder joints or electrical connections may be good enough for glitching but not for booting HOS (HorizonOS), please ensure that you test if your console boots by ensuring the console is off, then holding both volume buttons and pressing the power button once, letting go of the volume buttons when you see the Nintendo logo. If your Switch does *not* boot normally, please check if your console boots by removing the modchip (*not* the SoC ribbon cable), then turning the console on normally. If you still experience issues related to glitching/training, refer to the [troubleshooting page](../troubleshooting/error_codes.md#error-codes-for-picofly).
+       
 
-       ![test](../img/lite_img/test.JPG)
+     ![test](../img/lite_img/test.JPG)
 
 
 17. Place/position the modchip on top of the eMMC's metal cover plate at the top left, next to the SoC's frame, and secure it in place by using double sided tape.

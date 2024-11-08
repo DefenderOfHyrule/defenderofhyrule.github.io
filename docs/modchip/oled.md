@@ -163,8 +163,10 @@ Solder a wire to the `B` point and solder the other end of the wire to the `B` p
 ![test-setup-2](../img/oled_img/test-setup-2.JPG)
 
 25. Your Switch should now look like the image below. If it does, you can re-connect the battery connector, power button board and screen ribbon cable and power the console on. After the modchip glitches and trains (blinks blue, then white), you should be greeted with the `No SD Card` splash screen with the Picofly logo.
-![test-setup-2](../img/oled_img/test-setup-2.JPG)
-![test-setup-3](../img/oled_img/test-setup-3.JPG)
+      - **Note:** Getting to the `No SD Card` screen does not *always* indicate success. Sometimes solder joints or electrical connections may be good enough for glitching but not for booting HOS (HorizonOS), please ensure that you test if your console boots by ensuring the console is off, then holding both volume buttons and pressing the power button once, letting go of the volume buttons when you see the Nintendo logo. If your Switch does *not* boot normally, please check if your console boots by removing the modchip (*not* the SoC ribbon cable), then turning the console on normally. If you still experience issues related to glitching/training, refer to the [troubleshooting page](../troubleshooting/error_codes.md#error-codes-for-picofly).
+
+    ![test-setup-2](../img/oled_img/test-setup-2.JPG)
+    ![test-setup-3](../img/oled_img/test-setup-3.JPG)
 
 26. Place a piece of Kapton tape (or other non-conductive material) on top of the modchip and reassemble the console.
 ![assembly-1](../img/oled_img/assembly-1.JPG)

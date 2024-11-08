@@ -68,6 +68,10 @@ This was made possible by using Pi Pico debugging and getting rid of RGB/GRB iss
 
 ### **Splash screen troubleshooting**
 
+!!! note "**Question:** It says `No SD Card` when I turn my console on, what do I do?"
+
+    **Answer:** This is the "default" error screen. Ensure that you insert an SD card with a payload named to `payload.bin` on the root of your SD card to be able to boot into the desired payload (usually hekate). If it is inserted, your Switch's SD card reader may be malfunctioning. Test it with another SD card and if it also doesn't work, check the FPC port on the motherboard and SD card reader connector for any missing pins (Normal model Switch users). The SD card reader/game card reader board may need to be replaced if on an OLED Switch and the soldered on SD card reader may have to be replaced if on a Switch Lite.
+    
 !!! note "**Question:** It says `Failed to init SD Card!` when I turn my console on, what do I do?"
 
     **Answer:** Make sure your SD card is inserted fully. If it is, your Switch's SD card reader may be malfunctioning. Test it with another SD card and if it also doesn't work, check the FPC port on the motherboard and SD card reader connector for any missing pins (Normal model Switch users). The SD card reader/game card reader board may need to be replaced if on an OLED Switch and the soldered on SD card reader may have to be replaced if on a Switch Lite.

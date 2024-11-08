@@ -84,8 +84,10 @@ These values can differ from console to console. If your modchip installation wo
        ![kapton](../img/normal_img/13-kapton.jpg)
 
 14. Install the modchip. Slide the SoC ribbon cable into the connector on the left side of the modchip, install the left side of the modchip onto the eMMC module's FPC connector, install the eMMC module on the modchip, place a non-conductive material (like Kapton tape) between the eMMC module and the RAM chips, reconnect the battery and turn the console on. The modchip should blink blue a couple of times (glitching), then white (success). You should end up at a `No SD Card` splash screen with the Picofly logo after the modchip blinks white once.
-     ![test-install](../img/normal_img/12.JPG)
-     ![test-install](../img/normal_img/14.JPG)
+      - **Note:** Getting to the `No SD Card` screen does not *always* indicate success. Sometimes solder joints or electrical connections may be good enough for glitching but not for booting HOS (HorizonOS), please ensure that you test if your console boots by ensuring the console is off, then holding both volume buttons and pressing the power button once, letting go of the volume buttons when you see the Nintendo logo. If your Switch does *not* boot normally, please check if your console boots by removing the modchip (*not* the SoC ribbon cable) and placing the eMMC module back in its original place, then turning the console on normally. If you still experience issues related to glitching/training, refer to the [troubleshooting page](../troubleshooting/error_codes.md#error-codes-for-picofly).
+    
+    ![test-install](../img/normal_img/12.JPG)
+    ![test-install](../img/normal_img/14.JPG)
 
 15. Modify the IHS so that the SoC ribbon cable can stick out at the top. Bend the folded over side at the top of the SoC section flat with the end of tweezers or another strong flat material.
      ![IHS](../img/normal_img/17.jpg)

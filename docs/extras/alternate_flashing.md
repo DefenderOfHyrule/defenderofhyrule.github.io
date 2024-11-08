@@ -8,9 +8,10 @@ That being said, I do recommend updating your modchip's firmware to the latest f
 
 ### **Updating your Picofly modchip firmware via `picofly toolbox`:**
 
-1. Download `update.bin` and `picofly_toolbox_0.2.bin` from the link below:
+1. Download `picofly_toolbox_0.2.bin` and `update.bin` from the links below:
 
-    - <a href="https://github.com/DefenderOfHyrule/usk/releases/tag/2.75">https://github.com/DefenderOfHyrule/usk/releases/tag/2.75</a>
+    - [Picofly toolbox](../modchip/firmware/picofly_toolbox_0.2.bin)
+    - <a href="https://github.com/DefenderOfHyrule/usk/releases/tag/2.75">Firmware 2.75</a> (download `update.bin`)
 
 2. Place `update.bin` on the root of your SD card.
 

@@ -29,3 +29,15 @@ The modchip will do something called "training" once successful glitch timings h
 ### **The modchip's payload**
 
 The modchip, after glitching and training, will write its payload to an empty sector on the `BOOT0` partition of your Switch's internal storage. This payload is responsible for making your Switch boot up to the Picofly splash screen (the `No SD Card` splash screen with the Picofly logo) and stops the Switch from booting normally (unless `sdloader` is bypassed by holding both volume buttons and powering on the console). This payload is not dangerous and does not mess with any important aspect of the Switch's internal storage.
+
+-----
+
+### **Resources on voltage glitching**
+
+Here are some resources that detail voltage glitching in depth, with great explanations on how it works:
+
+- <a href="https://blog.securitybits.io/2019/06/voltage-glitching-on-the-cheap/">https://blog.securitybits.io/2019/06/voltage-glitching-on-the-cheap</a>
+- <a href="https://www.synacktiv.com/en/publications/how-to-voltage-fault-injection">https://www.synacktiv.com/en/publications/how-to-voltage-fault-injection</a>
+
+
+
