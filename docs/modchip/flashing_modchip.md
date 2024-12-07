@@ -25,8 +25,8 @@ This process is the same for all Picofly modchip models, just use the pictures i
 
 #### Instructions:
 
-1. Download the `.uf2`file from the link below:
-    - [Firmware 2.75](firmware/firmware.uf2)
+1. Download the last release of `uf2` file from the link below:
+    - [Github USK Repository](https://github.com/rehius/usk/releases)
 
 2. Position your modchip and included USB debug port in the upwards facing position. This means with the side of the RP2040 microcontroller (the square chip with the Raspberry Pi logo) facing you. This is important    because if you don't do this, you can risk frying the USB circuitry of the modchip. The USB debug port additionally also has `UP` text written on it to indicate the orientation of it. <br>
 ![picofly](../img/general_img/picofly.JPG){ width="600" }
