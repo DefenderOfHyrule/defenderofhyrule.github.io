@@ -19,19 +19,27 @@
         <link rel="next" href="../lite/">
       
       
+        
+      
+      
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.19">
+      <meta name="generator" content="zensical-0.0.27">
     
     
       
-        <title>Modchip installation Switch - NH-Switch Modchip Installation Guide</title>
+        <title>Switch Modchip Walkthrough - Switch - NH-Switch Modchip Installation Guide</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.50057488.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
 
@@ -45,18 +53,17 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
     
       <link rel="stylesheet" href="../../css/custom.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
-    
     
     
   </head>
@@ -74,11 +81,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
     <div data-md-component="skip">
       
         
-        <a href="#the-installation" class="md-skip">
+        <a href="#switch-modchip-walkthrough-switch" class="md-skip">
           Skip to content
         </a>
       
@@ -95,12 +102,12 @@
     <a href="../.." title="NH-Switch Modchip Installation Guide" class="md-header__button md-logo" aria-label="NH-Switch Modchip Installation Guide" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 320c88.4 0 160-71.6 160-160 0-15.3-2.2-30.1-6.2-44.2-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7H336c-8.8 0-16-7.2-16-16v-57.4c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0c-88.4 0-160 71.6-160 160 0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1 0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9l181.6-181.6c17 6.2 35.4 9.5 54.5 9.5zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M509.4 98.6c7.6-7.6 20.3-5.7 24.1 4.3 6.8 17.7 10.5 37 10.5 57.1 0 88.4-71.6 160-160 160-17.5 0-34.4-2.8-50.2-8L146.9 498.9c-28.1 28.1-73.7 28.1-101.8 0s-28.1-73.7 0-101.8L232 210.2c-5.2-15.8-8-32.6-8-50.2C224 71.6 295.6 0 384 0c20.1 0 39.4 3.7 57.1 10.5 10 3.8 11.8 16.5 4.3 24.1l-88.7 88.7c-3 3-4.7 7.1-4.7 11.3V176c0 8.8 7.2 16 16 16h41.4c4.2 0 8.3-1.7 11.3-4.7z"/></svg>
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -112,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modchip installation Switch
+              Switch Modchip Walkthrough - Switch
             
           </span>
         </div>
@@ -128,7 +135,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -138,7 +145,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -146,60 +153,36 @@
       
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
       
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
 </div>
+      
     
-    
-      <div class="md-header__source">
+    <div class="md-header__source">
+      
         <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
   </div>
 </a>
-      </div>
-    
+      
+    </div>
   </nav>
   
 </header>
@@ -218,11 +201,10 @@
   
   
   
+  
     <li class="md-tabs__item">
       <a href="../.." class="md-tabs__link">
         
-  
-    
   
   Introduction to modchips
 
@@ -232,6 +214,7 @@
 
       
         
+  
   
   
     
@@ -255,6 +238,7 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
@@ -270,6 +254,7 @@
 
       
         
+  
   
   
   
@@ -291,6 +276,7 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
@@ -309,10 +295,11 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
-        <a href="../../credits/credits/" class="md-tabs__link">
+        <a href="../../credits/" class="md-tabs__link">
           
   
   Credits
@@ -352,7 +339,7 @@
     <a href="../.." title="NH-Switch Modchip Installation Guide" class="md-nav__button md-logo" aria-label="NH-Switch Modchip Installation Guide" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 320c88.4 0 160-71.6 160-160 0-15.3-2.2-30.1-6.2-44.2-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7H336c-8.8 0-16-7.2-16-16v-57.4c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0c-88.4 0-160 71.6-160 160 0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1 0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9l181.6-181.6c17 6.2 35.4 9.5 54.5 9.5zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M509.4 98.6c7.6-7.6 20.3-5.7 24.1 4.3 6.8 17.7 10.5 37 10.5 57.1 0 88.4-71.6 160-160 160-17.5 0-34.4-2.8-50.2-8L146.9 498.9c-28.1 28.1-73.7 28.1-101.8 0s-28.1-73.7 0-101.8L232 210.2c-5.2-15.8-8-32.6-8-50.2C224 71.6 295.6 0 384 0c20.1 0 39.4 3.7 57.1 10.5 10 3.8 11.8 16.5 4.3 24.1l-88.7 88.7c-3 3-4.7 7.1-4.7 11.3V176c0 8.8 7.2 16 16 16h41.4c4.2 0 8.3-1.7 11.3-4.7z"/></svg>
 
     </a>
     NH-Switch Modchip Installation Guide
@@ -362,7 +349,7 @@
       <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -382,9 +369,16 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Introduction to modchips
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -400,6 +394,7 @@
   
   
   
+    
     
     
     
@@ -422,9 +417,16 @@
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Modchip overview
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -433,7 +435,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Modchip overview
+            
+  
+    Modchip overview
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -447,9 +453,16 @@
       <a href="../modchip_choice/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Modchip variants
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -468,9 +481,16 @@
       <a href="../flashing_modchip/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Flashing the modchip
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -492,45 +512,66 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     Modchip installation Switch
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Modchip installation Switch
+  
+
+    
   </span>
+  
   
 
       </a>
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#the-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      The Installation
+      
+        The Installation
+      
     </span>
   </a>
   
@@ -555,9 +596,16 @@
       <a href="../lite/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Modchip installation Switch Lite
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -576,96 +624,16 @@
       <a href="../oled/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Modchip installation Switch OLED
+  
+
+    
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    C (DAT0) point methods
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6">
-            <span class="md-nav__icon md-icon"></span>
-            C (DAT0) point methods
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dat0-adapter/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    DAT0 Adapter method
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../kamikaze-method/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Kamikaze method
-  </span>
   
 
       </a>
@@ -680,14 +648,6 @@
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
@@ -695,6 +655,7 @@
   
   
   
+    
     
     
     
@@ -716,9 +677,16 @@
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Functionality
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -727,7 +695,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Functionality
+            
+  
+    Functionality
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -741,9 +713,16 @@
       <a href="../../functionality/functionality_of_modchips/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Functionality of modchips
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -765,6 +744,7 @@
   
   
   
+    
     
     
     
@@ -786,9 +766,16 @@
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Troubleshooting
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -797,7 +784,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Troubleshooting
+            
+  
+    Troubleshooting
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -811,9 +802,16 @@
       <a href="../../troubleshooting/error_codes/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Error troubleshooting
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -835,6 +833,7 @@
   
   
   
+    
     
     
     
@@ -856,9 +855,16 @@
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Extras
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -867,7 +873,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Extras
+            
+  
+    Extras
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -881,9 +891,16 @@
       <a href="../../extras/alternate_flashing/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Alternative methods to flash your modchip
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -902,9 +919,16 @@
       <a href="../../extras/trinket/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     SAMD21 based modchips
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -923,9 +947,16 @@
       <a href="../../extras/sdreader/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Hardmodding the SD card reader
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -944,9 +975,16 @@
       <a href="../../extras/picoboot/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     PicoBoot (GC)
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -971,6 +1009,7 @@
     
     
     
+    
       
       
         
@@ -989,9 +1028,16 @@
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Credits
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1000,7 +1046,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Credits
+            
+  
+    Credits
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1011,12 +1061,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../credits/credits/" class="md-nav__link">
+      <a href="../../credits/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Credits
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1042,16 +1099,15 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
-
   
   
 
 
-  <h1>Modchip installation Switch</h1>
-
+<h1 id="switch-modchip-walkthrough-switch"><strong>Switch Modchip Walkthrough - Switch</strong><a class="headerlink" href="#switch-modchip-walkthrough-switch" title="Permanent link">&para;</a></h1>
 <h3 id="the-installation"><strong>The Installation</strong><a class="headerlink" href="#the-installation" title="Permanent link">&para;</a></h3>
 <p>This page will guide you through the modchip installation process on "Normal" model Switch consoles. Everything you need will be listed and pictures of what your solder joints should (roughly) look like will be posted by each step.
 Specific steps such as photos of the screws you need to unscrew aren't mentioned here as they can be found on guides from iFixit (for example). It's expected for you to know what to unscrew.</p>
@@ -1067,12 +1123,32 @@ Specific steps such as photos of the screws you need to unscrew aren't mentioned
 </thead>
 <tbody>
 <tr>
-<td><strong>SP1</strong>  <code>~0.125</code></td>
-<td><strong>SP1</strong>  <code>~0.125</code></td>
+<td><strong>SP1</strong> <code>~0.125</code></td>
+<td><strong>SP1</strong> <code>~0.125</code></td>
 </tr>
 <tr>
-<td><strong>SP2</strong>  <code>~0.12</code></td>
-<td><strong>SP2</strong>  <code>~0.10</code></td>
+<td><strong>SP2</strong> <code>~0.12</code></td>
+<td><strong>SP2</strong> <code>~0.10</code></td>
+</tr>
+<tr>
+<td><strong>A</strong> (CMD) <code>~0.470</code></td>
+<td><strong>A</strong> (CMD) <code>~0.875</code></td>
+</tr>
+<tr>
+<td><strong>B</strong> (RST) <code>~0.405</code></td>
+<td><strong>B</strong> (RST) <code>OL</code></td>
+</tr>
+<tr>
+<td><strong>C</strong> (DAT0) <code>~0.435</code></td>
+<td><strong>C</strong> (DAT0) <code>~0.450-0.850</code></td>
+</tr>
+<tr>
+<td><strong>D</strong> (CLK) <code>~0.440</code></td>
+<td><strong>D</strong> (CLK) <code>~0.880</code></td>
+</tr>
+<tr>
+<td><strong>3.3v</strong> <code>~0.445</code></td>
+<td><strong>3.3v</strong> <code>~0.850</code></td>
 </tr>
 </tbody>
 </table>
@@ -1081,113 +1157,178 @@ Specific steps such as photos of the screws you need to unscrew aren't mentioned
 <li>A soldering iron with a small(er) tip (preferably temperature controlled that can reach 350C consistently)</li>
 <li>Good quality flux</li>
 <li>The right screwdriver bits (+00 and Y1.5 bits)</li>
-<li>Thermal paste (preferably non-conductive)</li>
+<li>Good quality 34-38 awg wire (such as Kynar wire, other wire can work as long as it's single core)</li>
+<li>Thermal paste (non-conductive)</li>
 <li>Isopropyl Alcohol (preferably 95-99% IPA)</li>
 <li>Your modchip (including the SoC ribbon cable)</li>
 <li>Kapton tape (optional, but recommended)</li>
 <li>Toothpicks/Q-tips (to remove the thermal paste between the capacitors on the SoC)</li>
 <li>Soldering tin (leaded is recommended, unleaded will work depending on your skill level)</li>
+<li>Double sided tape (for adhering the modchip to the SoC/RAM IHS)</li>
 <li>A fume extractor (for your own health and safety)</li>
 <li>A microscope (optional but recommended)</li>
+<li>UV Solder mask (optional but recommended)</li>
 </ul>
-<details class="note">
-<summary>Note for stock RP2040 Zero development board users</summary>
-<p>If you use a stock <code>RP2040 Zero</code> development board, you will need to desolder the USB-C port,<code>BOOT</code> and <code>RESET</code> buttons before continuing. You'll also need to purchase the SoC ribbon cable separately together with 5x <code>0805 47Ω +-1%</code> resistors (5x is recommended, 3x is possible in some instances).
- The resistors can be purchased on AliExpress or websites like Digikey or Mouser Electronics. The SoC ribbon cable can be purchased from AliExpress.</p>
+<details class="warning">
+<summary>Note for stock <code>RP2040-Tiny</code> development board users</summary>
+<h4 id="the-pinout-for-the-modchip-lines-of-the-rp2040-tiny-board-are-outlined-and-named-in-the-image-below">The pinout for the modchip lines of the <code>RP2040-Tiny</code> board are outlined and named in the image below.<a class="headerlink" href="#the-pinout-for-the-modchip-lines-of-the-rp2040-tiny-board-are-outlined-and-named-in-the-image-below" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">In case you want the pinout in text form:</p>
+<ul>
+<li>GPIO Pin 29: C (<code>DAT0</code>)</li>
+<li>GPIO Pin 28: A (<code>CMD</code>)</li>
+<li>GPIO Pin 27: D (<code>CLK</code>)</li>
+<li>GPIO Pin 26: B (<code>RST</code>)</li>
+<li>GPIO Pin 15: CPU (<code>SP1</code>/<code>SP2</code>)</li>
+</ul>
+</div>
+<p><img alt="" loading="lazy" src="../../img/general_img/rp2040-tiny-pinout.jpg" /></p>
 </details>
 <h4 id="instructions">Instructions:<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
 <p>Unscrew and remove the Switch's backplate. Ensure you remove both middle screws on either side of the console, the screw at the top of the console, the two screws at the bottom of the console and the screw underneath the kickstand.
-     <img alt="backplate" src="../../img/normal_img/1.JPG" />
-     <img alt="backplate" src="../../img/normal_img/2.JPG" /></p>
+     <img alt="" loading="lazy" src="../../img/normal_img/1.JPG" />
+     <img alt="" loading="lazy" src="../../img/normal_img/2.JPG" /></p>
 </li>
 <li>
 <p>Remove the SD card reader.
-     <img alt="SD-card" src="../../img/normal_img/3.JPG" />
-     <img alt="SD-card" src="../../img/normal_img/4.JPG" /></p>
+     <img alt="" loading="lazy" src="../../img/normal_img/3.JPG" />
+     <img alt="" loading="lazy" src="../../img/normal_img/4.JPG" /></p>
 </li>
 <li>
 <p>Remove the metal shield/cover and disconnect the battery in the bottom right of the motherboard.
-     <img alt="metal-shield" src="../../img/normal_img/5.JPG" /></p>
+     <img alt="" loading="lazy" src="../../img/normal_img/5.JPG" /></p>
 </li>
 <li>
 <p>Remove the heatpipe/heatsink.
-     <img alt="heatsink" src="../../img/normal_img/6.JPG" /></p>
+     <img alt="" loading="lazy" src="../../img/normal_img/6.JPG" /></p>
 </li>
 <li>
 <p>Remove the IHS (Internal Heat Spreader) to expose the bare SoC die and RAM chips.
-     <img alt="IHS" src="../../img/normal_img/7.JPG" /></p>
+     <img alt="" loading="lazy" src="../../img/normal_img/7.JPG" /></p>
 </li>
 <li>
 <p>Remove and clean up the thermal paste on the SoC die and around/in-between the capacitors on the SoC using IPA.</p>
 <ul>
 <li>You can also clean off the thermal paste between the IHS and heatpipe/heatsink in the meantime, the red-ish colored thermal goop between the heatpipe/heatsink and metal shield/cover can be left alone.</li>
 </ul>
-<p><img alt="thermal-paste" src="../../img/normal_img/8.JPG" /></p>
+<p><img alt="" loading="lazy" src="../../img/normal_img/8.JPG" /></p>
 </li>
 <li>
 <p>Remove (unplug) the eMMC module from the motherboard.
-     <img alt="eMMC-module" src="../../img/normal_img/9.JPG" /></p>
+     <img alt="" loading="lazy" src="../../img/normal_img/9.JPG" /></p>
 </li>
 <li>
-<p>Ensure your working area is clean, you do <em>not</em> want to have thermal paste interfere with your soldering tin. This can also cause corrosion over time if you don't clean the area properly.</p>
-</li>
-<li>
-<p>Apply flux and pre-tin the pads labeled <code>SP1</code> and <code>SP2</code> on the SoC ribbon cable. (This process is the same for V2 SoC consoles and ribbon cables, the only difference are the orientation of the capacitors and the pads that are connected to each side of the capacitors on the SoC.)
-     <img alt="sp1-sp2" src="../../img/normal_img/sp1-sp2/not-tinned.JPG" />
-     <img alt="sp1-sp2" src="../../img/normal_img/sp1-sp2/tinned.JPG" /></p>
+<p>Locate the SoC and ensure your working area is clean, you do <em>not</em> want to have thermal paste interfere with your soldering tin. This can also cause corrosion over time if you don't clean the area properly.</p>
 </li>
 <li>
 <p>Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.</p>
+<details class="danger">
+<summary>Note regarding the SoC ribbon cable (Click to unfold)</summary>
+<ol>
+<li>
+<h4 id="if-your-soc-ribbon-cable-is-too-short-or-you-use-an-rp2040-tiny-development-board-you-cannot-plug-into-the-modchip-directly-to-make-it-work-regardless-you-can-just-solder-a-wire-to-the-two-middle-pins-of-the-ribbon-cable-as-pictured-below">If your SoC ribbon cable is too short or you use an <code>RP2040-Tiny</code> development board, you cannot plug into the modchip directly. To make it work regardless, you can just solder a wire to the two middle pins of the ribbon cable (as pictured below).<a class="headerlink" href="#if-your-soc-ribbon-cable-is-too-short-or-you-use-an-rp2040-tiny-development-board-you-cannot-plug-into-the-modchip-directly-to-make-it-work-regardless-you-can-just-solder-a-wire-to-the-two-middle-pins-of-the-ribbon-cable-as-pictured-below" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../../img/normal_img/soldering/alt-soc-cable.jpg" />
+<img alt="" src="../../img/normal_img/soldering/alt-soc-cable-wired.jpg" /></p>
 </li>
 <li>
-<p>Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly.
-     <img alt="anker" src="../../img/normal_img/lined-up.jpg" /></p>
+<h4 id="the-premade-picofly-oled-modchips-will-usually-have-a-dedicated-exposed-pad-on-it-that-you-can-solder-a-wire-to-you-can-view-this-pad-below-as-well">The "premade" Picofly OLED modchips will usually have a dedicated exposed pad on it that you can solder a wire to. You can view this pad below as well.<a class="headerlink" href="#the-premade-picofly-oled-modchips-will-usually-have-a-dedicated-exposed-pad-on-it-that-you-can-solder-a-wire-to-you-can-view-this-pad-below-as-well" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../../img/normal_img/soldering/sp1-sp2-bare.jpg" />
+<img alt="" src="../../img/normal_img/soldering/sp1-sp2-prepped.jpg" />
+<img alt="" src="../../img/normal_img/soldering/sp1-sp2-soldered.jpg" /></p>
+<ul>
+<li><strong>Note:</strong> If your modchip model does not have this dedicated pad, you can simply scrape off some solder mask off of the <code>SP1</code>/<code>SP2</code> trace on the modchip and solder directly to said trace.
+<img alt="" src="../../img/normal_img/soldering/sp1-sp2-trace.jpg" /></li>
+<li>If you use the <code>RP2040-Tiny</code>, it has a dedicated GPIO pin (pin 15). You can refer to the pinout at the <a href="#the-pinout-for-the-modchip-lines-of-the-rp2040-tiny-board-are-outlined-and-named-in-the-image-below">very top of this page</a></li>
+</ul>
+</li>
+</ol>
+</details>
 </li>
 <li>
-<p>Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the <code>SP1</code> and <code>SP2</code> points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
-     <img alt="soldered down" src="../../img/normal_img/soldered-down.jpg" /></p>
+<p>Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM.</p>
+<p><img alt="" loading="lazy" src="../../img/normal_img/soldering/bare-caps.jpg" />
+ <img alt="" loading="lazy" src="../../img/normal_img/soldering/lined-up.jpg" /></p>
+</li>
+<li>
+<p>Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the <code>SP1</code> and <code>SP2</code> points, ensure the solder flows between the pad on the ribbon cable and each end of the capacitors.
+     <img alt="" loading="lazy" src="../../img/normal_img/soldering/soldered-down.jpg" /></p>
 </li>
 <li>
 <p>Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.</p>
 <ul>
 <li><strong>Optional:</strong> Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
-   <img alt="kapton" src="../../img/normal_img/13-kapton.jpg" /></li>
+   <img alt="" loading="lazy" src="../../img/normal_img/soldering/13-kapton.jpg" /></li>
 </ul>
 </li>
 <li>
-<p>Install the modchip. Slide the SoC ribbon cable into the connector on the left side of the modchip, install the left side of the modchip onto the eMMC module's FPC connector, install the eMMC module on the modchip, place a non-conductive material (like Kapton tape) between the eMMC module and the RAM chips, reconnect the battery and turn the console on. The modchip should blink blue a couple of times (glitching), then white (success). You should end up at a <code>No SD Card</code> splash screen with the Picofly logo after the modchip blinks white once.</p>
+<p>Move on to the area above the SoC. In the image below, the required pads are outlined and named. </p>
+<p>The names for each point are the following:</p>
 <ul>
-<li><strong>Note:</strong> Getting to the <code>No SD Card</code> screen does not <em>always</em> indicate success. Sometimes solder joints or electrical connections may be good enough for glitching but not for booting HOS (HorizonOS), please ensure that you test if your console boots by ensuring the console is off, then holding both volume buttons and pressing the power button once, letting go of the volume buttons when you see the Nintendo logo. If your Switch does <em>not</em> boot normally, please check if your console boots by removing the modchip (<em>not</em> the SoC ribbon cable) and placing the eMMC module back in its original place, then turning the console on normally. If you still experience issues related to glitching/training, refer to the <a href="../../troubleshooting/error_codes/#error-codes-for-picofly">troubleshooting page</a>.</li>
+<li><strong>A:</strong> CMD</li>
+<li><strong>B:</strong> RST</li>
+<li><strong>C:</strong> DAT0</li>
+<li><strong>D:</strong> CLK</li>
 </ul>
-<p><img alt="test-install" src="../../img/normal_img/12.JPG" />
-<img alt="test-install" src="../../img/normal_img/14.JPG" /></p>
+<p><img alt="" loading="lazy" src="../../img/normal_img/soldering/abcd-pads-named.jpg" /></p>
+</li>
+<li>
+<p>Solder the wires onto each point now. Make sure there's a solid connection between the pads on the board and your wire. I've scraped the solder mask off of the via at the <code>B</code> point to make it easier to solder to.</p>
+<p><img alt="" loading="lazy" src="../../img/normal_img/soldering/abcd-b-scraped.jpg" />
+<img alt="" loading="lazy" src="../../img/normal_img/soldering/abcd-pads-prepped.jpg" />
+<img alt="" loading="lazy" src="../../img/normal_img/soldering/abcd-pads-soldered.jpg" /></p>
+</li>
+<li>
+<p>Now we will move onto the <code>3.3v</code> point. I personally recommend using the exposed <code>3.3v</code> pads on the eMMC module.</p>
+<p><img alt="" loading="lazy" src="../../img/normal_img/soldering/emmc-3v3.jpg" />
+<img alt="" loading="lazy" src="../../img/normal_img/soldering/emmc-3v3-tinned.jpg" />
+<img alt="" loading="lazy" src="../../img/normal_img/soldering/emmc-3v3-wired.jpg" /></p>
+</li>
+<li>
+<p>Finally, we will move onto the <code>GND</code> (ground) point. You can use <em>any</em> ground point on the board, but I prefer/recommend using the "arrow" on the ground plane to the right of the RAM.</p>
+<p><img alt="" loading="lazy" src="../../img/normal_img/soldering/gnd.jpg" /></p>
+</li>
+<li>
+<p>Wire up the modchip. Place something non-conductive between the modchip and RAM chips, then power the console on. The modchip will pulse blue/light blue a couple of times (glitching), then yellow (success). You should end up at a <code>No SD Card</code> splash screen with the Picofly logo after the modchip blinks yellow once.</p>
+<ul>
+<li><strong>Note:</strong> Getting to the <code>No SD Card</code> screen does not <em>always</em> indicate success. Sometimes solder joints or electrical connections may be good enough for glitching but not for booting HOS (HorizonOS), please ensure that you test if your console boots by ensuring the console is off, then holding both volume buttons and pressing the power button once, letting go of the volume buttons when you see the Nintendo logo. If your Switch does <em>not</em> boot normally, please check if your console boots by removing the modchip (<em>not</em> the SoC ribbon cable) and turning the console on normally. If you still experience issues related to glitching/training (such as a <em>red</em> error code), refer to the <a href="../../troubleshooting/error_codes/#error-codes-for-picofly">troubleshooting page</a>.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Note for stock <code>RP2040-Tiny</code> development board users</p>
+<p>Please refer to the pinout at the <a href="#the-pinout-for-the-modchip-lines-of-the-rp2040-tiny-board-are-outlined-and-named-in-the-image-below">very top of this page</a>.</p>
+</div>
+<p><img alt="" loading="lazy" src="../../img/normal_img/soldering/modchip-wired.jpg" />
+<img alt="" loading="lazy" src="../../img/normal_img/soldering/modchip-wired2.jpg" /></p>
+<p><img alt="" loading="lazy" src="../../img/normal_img/14.JPG" /></p>
 </li>
 <li>
 <p>Modify the IHS so that the SoC ribbon cable can stick out at the top. Bend the folded over side at the top of the SoC section flat with the end of tweezers or another strong flat material.
-     <img alt="IHS" src="../../img/normal_img/17.jpg" /></p>
+     <img alt="" loading="lazy" src="../../img/normal_img/17.jpg" /></p>
 </li>
 <li>
-<p>Reassemble the console (don't forget to apply thermal paste!) until you're at the point of putting the metal shield/backplate back in place. The modchip will not fit underneath the metal shield/backplate so you will need to cut a strip out of it, how I personally do this is by using regular scissors and cutting out the middle section.
-     <img alt="reassemble" src="../../img/normal_img/16.JPG" /></p>
+<p>Reassemble the console (don't forget to apply thermal paste!) until you're at the point of putting the metal shield/backplate back in place. The modchip will not fit underneath the metal shield/backplate so you will need to cut a strip out of it, how I personally do this is by using regular scissors and cutting out the middle section. You should also make sure that you place an adhesive between the modchip and IHS, so that the modchip is secured in place and doesn't move around when you use the console.
+     <img alt="" loading="lazy" src="../../img/normal_img/16.JPG" /></p>
 </li>
 <li>
 <p>Once done, you can fully reassemble the console and your console should now display <code>No SD Card</code> when you turn it on normally.
-     <img alt="reassemble-1" src="../../img/normal_img/20.JPG" />
-     <img alt="reassemble-2" src="../../img/normal_img/21.JPG" />
-     <img alt="reassemble-3" src="../../img/normal_img/22.JPG" /></p>
+     <img alt="" loading="lazy" src="../../img/normal_img/21.JPG" />
+     <img alt="" loading="lazy" src="../../img/normal_img/22.JPG" /></p>
 </li>
 </ol>
 <hr />
 <h4 id="whats-next">What's next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h4>
 <p>From here, if you get the same result as I did, you can continue following the NH Server guide to set up CFW by clicking the button below. If you want to know more about the functionality of modchips, visit the <a href="../../functionality/functionality_of_modchips/"><strong>Functionality of modchips</strong></a> page.</p>
 <p>If you'd like to donate to me, visit the <a href="../../credits/credits/"><strong>Credits</strong></a> section.</p>
-<p><a class="md-button md-button--primary" href="https://switch.hacks.guide/">Continue to the NH Server guide <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+<p><a class="md-button md-button--primary" href="https://switch.hacks.guide/">Continue to the NH Server guide <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p>
 <div class="admonition danger">
 <p>If you didn't get the same result as I did and are running into issues, please follow the troubleshooting section of this guide.
 It can be found <a href="../../troubleshooting/error_codes/">here</a>.</p>
 </div>
+
+  
+
+
 
 
 
@@ -1222,14 +1363,9 @@ It can be found <a href="../../troubleshooting/error_codes/">here</a>.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2024 <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io" target="_blank">DefenderOfHyrule</a>, Maintained by <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io">DefenderOfHyrule</a>.
+      Copyright &copy; 2026 <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io" target="_blank">DefenderOfHyrule</a>, Maintained by <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io">DefenderOfHyrule</a>.
     </div>
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       
@@ -1243,10 +1379,14 @@ It can be found <a href="../../troubleshooting/error_codes/">here</a>.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.instant", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["toc.integrate","navigation.instant","navigation.expand","navigation.sections","navigation.tabs","navigation.tracking"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5fd3284f.min.js"></script>
       
     
   </body>
