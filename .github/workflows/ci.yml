@@ -1,48 +1,38 @@
-name: ci 
-
+name: ci
 
 on:
   push:
     branches:
-      - master 
-
-
+      - master
       - main
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
 
+      - name: Install zensical
+        run: pip install -r requirements.txt
 
-      - uses: actions/cache@v4
+      - name: Build site
+        run: zensical build --clean
+
+      - name: Prepare deploy artifacts
+        run: |
+          touch site/.nojekyll
+          cp CNAME site/CNAME
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-
-      - run: pip install mkdocs-material==9.5.19
-
-      - run: mkdocs gh-deploy --force
-
-      - run: touch site/.nojekyll
-
-      - run: cp CNAME site/CNAME
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: site # The folder the action should deploy.
-          clean: true # Automatically remove deleted files from the deploy branch
+          branch: gh-pages
+          folder: site
+          clean: true

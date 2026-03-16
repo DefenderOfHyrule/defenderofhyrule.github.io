@@ -4,31 +4,37 @@ This page will cover the functionality of modchips, it will tell you about how t
 
 ### **General knowledge**
 
-Unlike "unpatched" consoles (V1 unpatched consoles), modchips enable the ability to run CFW via CPU voltage glitching, which bypass bootROM firmware verifications. It allows `payload.bin` to be launched in place of running `BOOT0` (the first partition on your Switch's internal storage that uses Nintendo's official bootloader) normally, loaded via a modchip firmware module named `sdloader`. This is much different from RCM and its exploit, fusee-gelee, which "unpatched" consoles use. Modchips allow any Switch console (like all "patched" consoles) to run CFW.
+Unlike "unpatched" consoles (V1 unpatched), modchips enable the ability to run CFW via CPU voltage glitching, which bypasses bootROM firmware verification. This allows payload.bin to be launched in place of `BOOT0` (the first partition on your Switch's internal storage, which contains Nintendo's official bootloader) by a modchip firmware module called `sdloader`. This differs significantly from the RCM exploit fusee-gelee, which is what unpatched consoles use. Modchips allow any Switch console, including all "patched" consoles, to run CFW.
 
 -----
 
 ### **The `sdloader` firmware module**
 
-`sdloader` is the module built into the Picofly firmware (and all other modchip firmwares) which is responsible for "injecting" (loading) `payload.bin` off of the root of your SD card. It will always run if the modchip installation is successful.
+`sdloader` is the module built into the Picofly firmware (and all other modchip firmwares) responsible for loading `payload.bin` from the root of your SD card. It will always run if the modchip installation is successful.
 
 -----
 
 ### **Voltage glitching**
 
-Voltage glitching essentially "lags out" the Switch's CPU by injecting too much voltage and timing out the CPU for a very short amount of time, allowing you to bypass bootROM firmware verification and the "injection" of a custom payload (in this case, `payload.bin`) from the root of your SD card in the newly created time window by voltage glitching. Voltage glitching is commonly used to interrupt the boot process of several other consoles and computers in general as well and is an effective "attack" in regards to console hacking.
+Voltage glitching is a type of fault injection attack, a hardware security exploitation technique. It works by briefly and precisely dropping the CPU's supply voltage below its safe operating threshold. This voltage disturbance causes the processor to enter an erroneous state, effectively violating what are known as setup and hold time requirements of the chip's internal logic, which can cause instructions to be skipped or memory operations to be corrupted.
+
+In the context of the Switch modchip, this erroneous state is exploited at a very specific moment during the boot process: when the bootROM performs its signature verification of the next boot stage. If the glitch is timed correctly, that verification check is skipped, allowing the modchip to redirect execution to `payload.bin` on your SD card via `sdloader`.
+
+Voltage glitching is widely used in hardware security research and console hacking. It has previously been used to attack devices such as the Xbox 360, PS Vita, and various microcontrollers. It is considered an attractive attack vector because it is relatively inexpensive to set up and broadly applicable to many chips.
 
 -----
 
 ### **Training**
 
-The modchip will do something called "training" once successful glitch timings have been found. Training is the process of "stress testing" the glitch timings the modchip found, glitch timings are the aforementioned time windows the modchip creates to "inject" `payload.bin`. Several glitch timing entries are written to the modchip's "internal storage" and are used for quick boot times. If one of the glitch timings changes or is updated by performing a Switch firmware update, the modchip will attempt to glitch and run `sdloader` with the rest of the remaining glitch timings. If glitching or training fails, resetting the modchip may be necessary (requiring you to open up the console and accessing the modchip manually). Picofly will typically never fail glitching and training unless hardware issues are present.
+Once successful glitch timings have been found, the modchip performs a process called "training": stress-testing those timings to verify their reliability. The timings, which define the exact delay and duration of the voltage glitch, are then written to the modchip's internal storage and used to achieve fast boot times on subsequent boots.
+
+If a Switch firmware update changes the relevant boot code, some of those stored timings may no longer work. The modchip will cycle through its remaining stored timings and attempt to re-train if needed. If glitching or training fails entirely, resetting the modchip may be required (which involves opening the console and accessing the modchip manually). In practice, Picofly rarely fails glitching or training unless a hardware issue is present.
 
 -----
 
 ### **The modchip's payload**
 
-The modchip, after glitching and training, will write its payload to an empty sector on the `BOOT0` partition of your Switch's internal storage. This payload is responsible for making your Switch boot up to the Picofly splash screen (the `No SD Card` splash screen with the Picofly logo) and stops the Switch from booting normally (unless `sdloader` is bypassed by holding both volume buttons and powering on the console). This payload is not dangerous and does not mess with any important aspect of the Switch's internal storage.
+After glitching and training, the modchip writes its payload to an empty sector on the `BOOT0` partition of your Switch's internal storage. This payload is responsible for displaying the Picofly splash screen (the `No SD Card` screen with the Picofly logo) on boot, and prevents the Switch from booting normally unless `sdloader` is bypassed by holding both volume buttons while powering on. This payload does not interfere with any critical part of the Switch's internal storage.
 
 -----
 
@@ -36,8 +42,14 @@ The modchip, after glitching and training, will write its payload to an empty se
 
 Here are some resources that detail voltage glitching in depth, with great explanations on how it works:
 
-- <a href="https://blog.securitybits.io/2019/06/voltage-glitching-on-the-cheap/">https://blog.securitybits.io/2019/06/voltage-glitching-on-the-cheap</a>
-- <a href="https://www.synacktiv.com/en/publications/how-to-voltage-fault-injection">https://www.synacktiv.com/en/publications/how-to-voltage-fault-injection</a>
+!!! note ""
 
+    <a href="https://www.nccgroup.com/research-blog/an-introduction-to-fault-injection-part-13/">NCC Group - An Introduction to Fault Injection (Part 1/3)</a> - accessible, well-structured intro covering voltage, clock, EM, and optical glitching
+    
+    <a href="https://www.synacktiv.com/en/publications/how-to-voltage-fault-injection">Synacktiv - How to Voltage Fault Injection</a> - practical walkthrough with real IoT device case studies
+    
+    <a href="https://www.hardbreak.wiki/hardware-hacking/bypassing-security/voltage-glitching">HardBreak Wiki - Voltage Glitching</a> - concise hardware-hacking focused reference
+    
+    <a href="https://arxiv.org/pdf/1903.08102">Yifan Lu - Injecting Software Vulnerabilities with Voltage Glitching</a> - academic paper, includes a PS Vita boot-time fault injection case study
 
 

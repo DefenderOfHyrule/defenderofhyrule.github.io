@@ -1,12 +1,12 @@
 site_name: NH-Switch Modchip Installation Guide
 
-copyright: Copyright &copy; 2024 <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io" target="_blank">DefenderOfHyrule</a>, Maintained by <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io">DefenderOfHyrule</a>.
+copyright: Copyright &copy; 2026 <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io" target="_blank">DefenderOfHyrule</a>, Maintained by <a href="https://github.com/DefenderOfHyrule/defenderofhyrule.github.io">DefenderOfHyrule</a>.
 site_description: Switch Modchip Installation Guide.
 site_author: DefenderOfHyrule
 repo_url: https://github.com/DefenderOfHyrule/defenderofhyrule.github.io
 
 theme:
-  name: material
+  variant: modern
   favicon: img/favicon.ico
   features:
     - toc.integrate
@@ -43,9 +43,6 @@ nav:
         - 'Modchip installation Switch': 'modchip/normal.md'
         - 'Modchip installation Switch Lite': 'modchip/lite.md'
         - 'Modchip installation Switch OLED': 'modchip/oled.md'
-        - C (DAT0) point methods:
-            - 'DAT0 Adapter method' : 'modchip/dat0-adapter.md'
-            - 'Kamikaze method' : 'modchip/kamikaze-method.md'
     - Functionality:
        -  'Functionality of modchips': 'functionality/functionality_of_modchips.md'
     - Troubleshooting:
@@ -56,7 +53,7 @@ nav:
         - 'Hardmodding the SD card reader': 'extras/sdreader.md'
         - 'PicoBoot (GC)': 'extras/picoboot.md'
     - Credits:
-        - 'Credits': 'credits/credits.md'
+        - 'Credits': 'credits.md'
 
 markdown_extensions:
   - admonition
@@ -76,6 +73,8 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 3
+extra:
+  generator: false
 
 extra_css:
   - css/custom.css

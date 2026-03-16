@@ -4,6 +4,8 @@ hide:
   - toc
 ---
 
+# **Switch Modchip Walkthrough - Switch Lite**
+
 ### **The Installation**
 
 This page will guide you through the modchip installation process on "Lite" model Switch consoles. Everything you need will be listed and pictures of what your solder joints should (roughly) look like will be posted by each step.
@@ -30,117 +32,148 @@ These values can differ from console to console. If your modchip installation wo
 - A soldering iron with a small(er) tip (preferably temperature controlled that can reach 350C consistently)
 - Good quality flux
 - The right screwdriver bits (+00 and Y1.5 bits)
-- Good quality 30-32 awg wire (such as Kynar wire, other wire can work as long as it's single core)
-- Thermal paste (preferably non-conductive)
+- Good quality 34-38 awg wire (such as Kynar wire, other wire can work as long as it's single core)
+- Thermal paste (non-conductive)
 - Isopropyl Alcohol (preferably 95-99% IPA)
 - Your modchip (including the SoC ribbon cable)
 - Kapton tape (optional, but recommended)
 - Toothpicks/Q-tips (to remove the thermal paste between the capacitors on the SoC)
 - Soldering tin (leaded is recommended, unleaded will work depending on your skill level)
-- Double sided tape
+- Double sided tape (for adhering the modchip to the SoC/RAM IHS)
 - A fume extractor (for your own health and safety)
 - A microscope (optional but recommended)
 - UV Solder mask (optional but recommended)
 
-??? note "Note for stock RP2040 Zero development board users"
-     If you use a stock `RP2040 Zero` development board, you will need to desolder the USB-C port,`BOOT` and `RESET` buttons before continuing. You'll also need to purchase the SoC ribbon cable separately together with 5x `0805 47Ω +-1%` resistors (5x is recommended, 3x is possible in some instances).
-     The resistors can be purchased on AliExpress or websites like Digikey or Mouser Electronics. The SoC ribbon cable can be purchased from AliExpress.
+??? warning "Note for stock `RP2040-Tiny` development board users"
 
+    #### The pinout for the modchip lines of the `RP2040-Tiny` board are outlined and named in the image below.
+    
+    !!! info "In case you want the pinout in text form:"
+    
+        - GPIO Pin 29: C (`DAT0`)
+        - GPIO Pin 28: A (`CMD`)
+        - GPIO Pin 27: D (`CLK`)
+        - GPIO Pin 26: B (`RST`)
+        - GPIO Pin 15: CPU (`SP1`/`SP2`)
+    
+    ![](../img/general_img/rp2040-tiny-pinout.jpg){ loading=lazy }
+    
 #### Instructions:
 
 1. Unscrew the Switch's backplate.
-     ![back](../img/lite_img/back.JPG)
-     ![shield](../img/lite_img/shield.JPG)
+     ![](../img/lite_img/back.JPG){ loading=lazy }
+     ![](../img/lite_img/shield.JPG){ loading=lazy }
 
-2. Remove the metal shield/cover.
-     ![internals](../img/lite_img/internals.JPG)
-
-
-3. Remove the heatpipe/heatsink.
-     ![heatsink](../img/lite_img/heatsink.JPG)
+1. Remove the metal shield/cover.
+     ![](../img/lite_img/internals.JPG){ loading=lazy }
 
 
-4. Remove the IHS (Internal Heat Spreader) to expose the bare SoC die and RAM chips.
-     ![ihs-removed](../img/lite_img/ihs-removed.JPG)
+1. Remove the heatpipe/heatsink.
+     ![](../img/lite_img/heatsink.JPG){ loading=lazy }
 
 
-5. Remove and disconnect the Gamecard reader, then remove and clean up the thermal paste on the SoC die and around/in-between the capacitors on the SoC using IPA.
+1. Remove the IHS (Internal Heat Spreader) to expose the bare SoC die and RAM chips.
+     ![](../img/lite_img/ihs-removed.JPG){ loading=lazy }
+
+
+1. Remove and clean up the thermal paste on the SoC die and around/in-between the capacitors on the SoC using IPA.
        - You can also clean off the thermal paste between the IHS and heatpipe/heatsink in the meantime, the red-ish colored thermal goop between the heatpipe/heatsink and metal shield/cover can be left alone.
 
-     ![clean](../img/lite_img/clean.JPG)
+     ![](../img/lite_img/clean.JPG){ loading=lazy }
 
-6. Apply flux and pre-tin the pads labeled `SP1` and `SP2` on the SoC ribbon cable.
-     ![not-tinned](../img/lite_img/sp1-sp2/not-tinned.JPG)
-     ![tinned](../img/lite_img/sp1-sp2/tinned.JPG)
+1. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
 
-7. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
-     ![bare-caps](../img/lite_img/soldering/bare-caps.jpg)
-     ![lined-up](../img/lite_img/soldering/lined-up.jpg)
+    ??? danger "Note regarding the SoC ribbon cable (Click to unfold)"
+    
+        1. #### If your SoC ribbon cable is too short or you use an `RP2040-Tiny` development board, you cannot plug into the modchip directly. To make it work regardless, you can just solder a wire to the two middle pins of the ribbon cable (as pictured below).
+        ![](../img/normal_img/soldering/alt-soc-cable.jpg)
+        ![](../img/normal_img/soldering/alt-soc-cable-wired.jpg)
+        
+        1. #### The "premade" Picofly OLED modchips will usually have a dedicated exposed pad on it that you can solder a wire to. You can view this pad below as well.
+        ![](../img/normal_img/soldering/sp1-sp2-bare.jpg)
+        ![](../img/normal_img/soldering/sp1-sp2-prepped.jpg)
+        ![](../img/normal_img/soldering/sp1-sp2-soldered.jpg)
+        
+            - **Note:** If your modchip model does not have this dedicated pad, you can simply scrape off some solder mask off of the `SP1`/`SP2` trace on the modchip and solder directly to said trace.
+            ![](../img/normal_img/soldering/sp1-sp2-trace.jpg)
+            - If you use the `RP2040-Tiny`, it has a dedicated GPIO pin (pin 15). You can refer to the pinout at the [very top of this page](#the-pinout-for-the-modchip-lines-of-the-rp2040-tiny-board-are-outlined-and-named-in-the-image-below)
+            
+     ![](../img/lite_img/soldering/bare-caps.jpg){ loading=lazy }
+     ![](../img/lite_img/soldering/lined-up.jpg){ loading=lazy }
 
+1. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM.
+            
+     ![](../img/normal_img/soldering/bare-caps.jpg){ loading=lazy }
+     ![](../img/normal_img/soldering/lined-up.jpg){ loading=lazy }
 
-8. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly.
+1. Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and each end of the capacitors.
+     ![](../img/normal_img/soldering/soldered-down.jpg){ loading=lazy }
 
-9. Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
-
-10. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
-       - **Optional:** Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints. (I *did* do this but didn't take a photo of it.)
-
-     ![soldered-down](../img/lite_img/soldering/soldered-down.jpg)
-
-11. The following pads are located directly to the right of the metal eMMC cover/frame. </br>
-    </br>
-    Tin the end of your wire and solder it to the `C` (DAT0, in red) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `C` pad on the modchip. </br>
-    </br>
-    Tin the end of your wire and solder it to the `A` (CMD, in green) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `A` pad on the
-    modchip.</br>
-    </br>
-    Tin the end of your wire and solder it to the `D` (CLK, in blue) pad(s) on the motherboard. Be careful that you don't bridge the pads next to-, above and below these two pads. Solder this piece of wire to the `D` pad on the modchip. </br>
-       - **Note:** Each set of two pads are horizontally connected to each other. Bridging them will not cause any harm and is also the recommended thing to do.
-    ![cad-untouched](../img/lite_img/soldering/cad-untouched.jpg)
-    ![cad](../img/lite_img/soldering/cad.jpg)
-
-12. This capacitor is located next to the bottom right of the Gamecard reader's plastic frame. </br>
-    </br>
-    Tin the end of your wire and solder it to the top end of the `3.3v` capacitor. Be careful once again and make sure you don't bridge this point with any pads next to it. Solder this piece of wire to the `3.3v` pad on the modchip.
-
-       - **Optional:** Use UV solder mask on this point. It's a fragile point and you won't want to have to resolder/rework it in the future.
-
-      ![3.3v](../img/lite_img/soldering/3.3v.jpg)
-
-13. Tin the end of your wire and solder it to the `B` (RST) pad on the motherboard. Be careful that you don't bridge the pads next to- and below these two pads. Solder this piece of wire to the `B` pad on the modchip.
-
-      ![b](../img/lite_img/soldering/b.jpg)
-
-14. Tin the end of your wire and solder it to a ground point on the motherboard. We will be using the point shown below (located to the bottom left of the fan, above the RAM chips). Once done, solder this piece of wire to the `GND`pad on the modchip.
-
-      ![gnd](../img/lite_img/soldering/gnd.jpg)
-
-15. Modify the left side (right side in the image below, as the IHS is upside down) of the IHS so that the SoC ribbon cable can fit through the left side of the IHS.
-
-      ![ihs-modified](../img/lite_img/ihs-modified.JPG)
-
-16.  Once done, connect the ribbon cable to the port on the modchip by bending the SoC ribbon cable accordingly. (Be careful!)
-       - **Optional:** At this point, you can test if your modchip installation was successful. Re-connect the battery and the screen ribbon cable, then turn the console on. You should end up at a `No SD Card` splash screen with the Picofly logo.
-       - **Note:** Getting to the `No SD Card` screen does not *always* indicate success. Sometimes solder joints or electrical connections may be good enough for glitching but not for booting HOS (HorizonOS), please ensure that you test if your console boots by ensuring the console is off, then holding both volume buttons and pressing the power button once, letting go of the volume buttons when you see the Nintendo logo. If your Switch does *not* boot normally, please check if your console boots by removing the modchip (*not* the SoC ribbon cable), then turning the console on normally. If you still experience issues related to glitching/training, refer to the [troubleshooting page](../troubleshooting/error_codes.md#error-codes-for-picofly).
+1. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
+       - **Optional:** Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
+       ![](../img/normal_img/soldering/13-kapton.jpg){ loading=lazy }
        
+1. Move on to the area diagonally left above the SoC. In the image below, the required pads are outlined and named. 
 
-     ![test](../img/lite_img/test.JPG)
+    The names for each point are the following:
+    
+    - **C:** DAT0
+    - **A:** CMD
+    - **D:** CLK
+
+    **Note:** Each set of two pads are horizontally connected to each other. Bridging them will not cause any harm and is also the recommended thing to do.
+    
+      ![](../img/lite_img/soldering/cad-untouched.jpg){ loading=lazy }
+      
+1. Solder the wires onto each point now. Make sure there's a solid connection between the pads on the board and your wire. I've scraped the mask off of the via at the `B` point to make it easier to solder to.
+
+      ![](../img/lite_img/soldering/cad.jpg){ loading=lazy }      
+
+1. Move on to the area directly above the SoC and solder your wire and solder it to the `B` (RST) pad on the motherboard.
+
+      ![](../img/lite_img/soldering/b-untouched.jpg){ loading=lazy }
+      ![](../img/lite_img/soldering/b.jpg){ loading=lazy }
+    
+1. Now we will move onto the `3.3v` point. I personally recommend using the exposed `3.3v` pads directly to the right of the RAM.
+
+      ![](../img/lite_img/soldering/3v3-untouched.jpg){ loading=lazy }
+      ![](../img/lite_img/soldering/3.3v.jpg){ loading=lazy }
+
+1. Finally, we will move onto the `GND` (ground) point. You can use *any* ground point on the board, but I prefer/recommend using the "arrow" on the ground plane above the left antenna terminal.
+
+      ![](../img/lite_img/soldering/gnd-untouched.jpg){ loading=lazy }
+      ![](../img/lite_img/soldering/gnd.jpg){ loading=lazy }
+
+1. Modify the left side (right side in the image below, as the IHS is upside down) of the IHS so that the SoC ribbon cable can fit through the left side of the IHS.
+
+      ![](../img/lite_img/ihs-modified.JPG){ loading=lazy }
+
+1.  Wire up the modchip. Place something non-conductive between the modchip and RAM chips, then power the console on. The modchip will pulse blue/light blue a couple of times (glitching), then yellow (success). You should end up at a `No SD Card` splash screen with the Picofly logo after the modchip blinks yellow once.
+      - **Note:** Getting to the `No SD Card` screen does not *always* indicate success. Sometimes solder joints or electrical connections may be good enough for glitching but not for booting HOS (HorizonOS), please ensure that you test if your console boots by ensuring the console is off, then holding both volume buttons and pressing the power button once, letting go of the volume buttons when you see the Nintendo logo. If your Switch does *not* boot normally, please check if your console boots by removing the modchip (*not* the SoC ribbon cable) and turning the console on normally. If you still experience issues related to glitching/training (such as a *red* error code), refer to the [troubleshooting page](../troubleshooting/error_codes.md#error-codes-for-picofly).
+      
+    !!! warning "Note for stock `RP2040-Tiny` development board users"
+    
+        Please refer to the pinout at the [very top of this page](#the-pinout-for-the-modchip-lines-of-the-rp2040-tiny-board-are-outlined-and-named-in-the-image-below).
+
+    ![](../img/lite_img/soldering/modchip-wired.jpg){ loading=lazy }
+    ![](../img/lite_img/soldering/modchip-wired2.jpg){ loading=lazy }
+
+      ![test](../img/lite_img/test.JPG){ loading=lazy }
+
+1. If everything looks as expected (like the image below), you can continue.
+
+      ![](../img/lite_img/expected.JPG){ loading=lazy }
+      
+1. Reassemble the console (don't forget to apply thermal paste!) until you're at the point of putting the metal shield/backplate back in place. The modchip will not fit underneath the metal shield/backplate so you will need to cut a strip out of it, how I personally do this is by using regular scissors and cutting out the middle section. You should also make sure that you place an adhesive between the modchip and IHS, so that the modchip is secured in place and doesn't move around when you use the console.
+     ![](../img/lite_img/plate.JPG){ loading=lazy }
+     ![](../img/lite_img/plate-1.JPG){ loading=lazy }
 
 
-17. Place/position the modchip on top of the eMMC's metal cover plate at the top left, next to the SoC's frame, and secure it in place by using double sided tape.
+1. Once the console is fully reassembled and you turn it on, you should still end up at the `No SD Card` splash screen. You've successfully installed the modchip.
 
-18. If everything looks as expected (like the images below), you can continue with reassembling the console. (Don't forget to apply thermal paste!)
-
-      ![expected](../img/lite_img/expected.JPG)
-      ![ihs-on](../img/lite_img/ihs-on.JPG)
-
-
-19. Once the console is fully reassembled and you turn it on, you should still end up at the `No SD Card` splash screen. You've successfully installed the modchip.
-
-      ![heatsink-on](../img/lite_img/heatsink-on.JPG)
-      ![metal-on](../img/lite_img/metal-on.JPG)
-      ![backplate-on](../img/lite_img/backplate-on.JPG)
-      ![final](../img/lite_img/final.JPG)
+      ![](../img/lite_img/metal-on.JPG){ loading=lazy }
+      ![](../img/lite_img/backplate-on.JPG){ loading=lazy }
+      ![](../img/lite_img/final.JPG){ loading=lazy }
 
 
 -----

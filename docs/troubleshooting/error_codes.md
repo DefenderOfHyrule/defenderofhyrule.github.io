@@ -1,3 +1,5 @@
+# **Error troubleshooting**
+
 ### **Information**
 
 Are you experiencing issues after your modchip installation? Is your modchip giving you an error code you can't make sense of? Then this is the page for you.
@@ -10,13 +12,15 @@ Your modchip will give you error codes if there is an issue with the installatio
 
 The following information was obtained from [this github repository](https://github.com/Ansem-SoD/Picofly) and was slightly modified by me:
 
-#### **As of firmware 2.70 and above, the debug LED colors and sequences/codes have changed.**
+#### **As of firmware 2.80 and above, the debug LED colors and sequences/codes have changed.**
 
-Now the possible status indicators will only consist of 3 colors:
+Now the possible status indicators will consist of 5 colors:
 
-- Blue (glitching),
-- White (writing payload or success),
-- Yellow (error code).
+- `Blue` indicates glitching,
+- `Light blue` indicates training,
+- `Beige` indicates comparison to stored training data,
+- `Yellow/Orange` indicates writing sdloader to BOOT0 and/or success,
+- `Red` indicates an issue with your modchip installation (otherwise known as a fault or error code).
 
 This was made possible by using Pi Pico debugging and getting rid of RGB/GRB issues.
 
@@ -124,4 +128,4 @@ The following information was obtained from [this github repository](https://git
 
 - **Note:** We do *not* assist with Hwfly/Instinct-NX based modchips in the NH Discord server. This section solely exists for your own troubleshooting purposes.
 
-![hwfly-error-codes](../img/general_img/troubleshooting/hwfly-error-codes.gif)
+![](../img/general_img/troubleshooting/hwfly-error-codes.gif)
