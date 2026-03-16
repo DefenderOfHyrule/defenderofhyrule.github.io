@@ -1,4 +1,4 @@
-# **Alternative methods fo update your modchip's firmware**
+# **Alternative methods to update your modchip's firmware**
 
 ### **Information**
 
