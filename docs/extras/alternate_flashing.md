@@ -24,7 +24,7 @@ That said, I do recommend updating your modchip's firmware to the latest firmwar
 1. Navigate to `Picofly Options...` underneath the `Picofly` section.
 
 1. Press `Info` underneath the `Firmware` section to see the information about the firmware version you're running. Press any key (the Volume or Power buttons) to return to the previous menu.
-    - If it's running version `2.80`, you're already up to date and do not need to update.
+    - If it's running version `2.81`, you're already up to date and do not need to update.
     - **Note:** *Some* Picofly modchips come pre-flashed with a fork of the spacecraft-nx firmware for hwfly modchips (the `NO SD` screen with the interactive rocket when you turn the Switch on without SD card inserted). You should *not* use this firmware as it is unstable and can cause things like Android/Linux to not boot at all (if relevant to your situation), slow boot times and it can potentially shorten the lifespan of your modchip. *If* you have this firmware version, the `Info` menu will report `No valid picofly descriptor found. Signature: 0x00000000 (expected 0x9cabe959)` which means that you should update your modchip's firmware.
 
 1. Select `Update (update.bin)` in the `Firmware` section, press A or power and wait for it to finish updating the modchip's firmware from `update.bin` located on the root of your SD card. (This shouldn't take more than 1-2 seconds.)
@@ -35,7 +35,14 @@ That said, I do recommend updating your modchip's firmware to the latest firmwar
 
     - Glitching and training may take a little longer the first time after flashing but should be fast again afterwards.
 
-    - **Optional:** Verifying if the firmware update was successful can be done by booting into `modchip_toolbox.bin` (in hekate going to `Payloads` > `modchip_toolbox.bin`) and selecting `Picofly Options...` > `Info` again. It should now display the version number as `2.80`.
+    - **Optional:** Verifying if the firmware update was successful can be done by booting into `modchip_toolbox.bin` (in hekate going to `Payloads` > `modchip_toolbox.bin`) and selecting `Picofly Options...` > `Info` again. It should now display the version number as `2.81`.
+    
+!!! danger "Read this if you came here to restore your ability to boot `OFW`"
+    To be able to boot `OFW` again, you must finish the in-progress firmware update by booting stock (or sysCFW) from hekate's `Launch` menu. Once you've successfully booted into stock/sysCFW, navigate to `System Settings` > `System` and check if it mentions the firmware version you updated to (e.g. `22.0.0`) underneath the `System Update` button. (It's expected for it not to say the Atmosphere version and environment you're booted into next to the version string.) 
+    
+    If this is the case, you can now reboot or power off your Switch and `OFW` will be accessible again. Booting `OFW` is done by booting into hekate and going to `Reboot` > `OFW` from hekate's `Home` menu.
+    
+    - **Note:** If you lack the stock/sysCFW boot entries in hekate's `Launch` menu, please replace your `hekate_ipl.ini` with [this one](https://nintendohomebrew.com/assets/hekate_ipl.ini) by overwriting the `hekate_ipl.ini` file currently in the `bootloader` folder on your SD card.
 
 -----
 
