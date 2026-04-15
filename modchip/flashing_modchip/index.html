@@ -296,6 +296,22 @@
   
   
   
+    <li class="md-tabs__item">
+      <a href="../../legacy/legacy/" class="md-tabs__link">
+        
+  
+  Legacy
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
     
     
       <li class="md-tabs__item">
@@ -1004,6 +1020,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../legacy/legacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -1020,10 +1063,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -1041,8 +1084,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1109,7 +1152,7 @@
 <h3 id="information"><strong>Information</strong><a class="headerlink" href="#information" title="Permanent link">&para;</a></h3>
 <p>Modchips have their own separate firmware version that is separate from the Switch system firmware version, this firmware ultimately determines the functionality and performance of your modchip.
 Flashing the firmware to the modchip is not mandatory if your modchip already comes "pre-flashed", but it is recommended to do so.</p>
-<p>Any Picofly firmware below version <code>2.75</code> is deprecated and is no longer supported, which is why we will be ensuring that the modchip has the latest firmware version (currently <code>2.81</code>) flashed to it. This will make sure that you have the best performance and hardware compatibility.</p>
+<p>Any Picofly firmware below version <code>2.75</code> is deprecated and is no longer supported, which is why we will be ensuring that the modchip has the latest firmware version (currently <code>2.82</code>) flashed to it. This will make sure that you have the best performance and hardware compatibility.</p>
 <p>This process is the same for all Picofly modchip models, just use the pictures in the instructions below as reference for your own modchip.</p>
 <div class="admonition note">
 <p><strong>If you're looking to flash your modchip's firmware while it's installed in your Switch console already, see <a href="../../extras/alternate_flashing/">this page</a>.</strong></p>
@@ -1210,39 +1253,41 @@ More recently produced Picofly modchips will come with USB type C debug ports.</
 <p><a class="md-button md-button--primary" href="../normal/">Continue to Modchip installation Switch <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p>
 <p><a class="md-button md-button--primary" href="../lite/">Continue to Modchip installation Switch Lite <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p>
 <p><a class="md-button md-button--primary" href="../oled/">Continue to Modchip installation Switch OLED <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p>
-<details class="warning">
+<details class="note">
 <summary>About flashing Hwfly/SX series modchips</summary>
 <p>Instructions on how to flash Hwfly/SX series differ a tiny amount from Picofly modchips, they don't have the <code>BOOT</code> button and only require you to plug them into your PC to flash them.</p>
+<h4 id="requirements">Requirements:<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The micro USB / USB-C debug port that comes with a modchip "set" (image shown in the "Instructions" section below)</li>
+<li>Your Hwfly/SX series modchip</li>
+<li>Latest release of <a href="https://github.com/hwfly-nx/firmware/releases/tag/0.7.2">hwfly-firmware</a> (<code>release_XXX.zip</code>)</li>
+<li>A computer or Android phone (computer recommended)</li>
+<li>A USB type C to USB type A cable / A micro USB to USB type A cable capable of data transfer</li>
+</ul>
 <h4 id="instructions_2">Instructions:<a class="headerlink" href="#instructions_2" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
-<p>Download the <code>.zip</code> file from the link below and extract the <code>.zip</code> file to a location on your PC:</p>
-<ul>
-<li><a href="https://github.com/hwfly-nx/firmware/releases/download/0.7.2/release_072.zip">hwfly-firmware</a></li>
-</ul>
-</li>
-<li>
 <p>Position your modchip and included USB debug port in the upwards facing position. This means with the side of the microcontroller (the biggest square chip) facing you. This is important because if you don't do this, you can risk frying the USB circuitry of the modchip. The USB debug port additionally also has <code>UP</code> text written on it to indicate the orientation. <br>
-<img alt="" src="../../img/general_img/hwfly.jpg" width="600" /></p>
+<img alt="hwfly" src="../../../img/general_img/hwfly.jpg" width="600" />}{ loading=lazy </p>
 </li>
 <li>
 <p>Lift up the locking tab and plug the USB debug port into the connector at the bottom of your modchip, then lock the locking tab to secure the USB debug port in place. <br>
-<img alt="" src="../../img/general_img/hwfly-with-usb.jpg" width="600" /></p>
+<img alt="hwfly-with-usb" src="../../../img/general_img/hwfly-with-usb.jpg" width="600" />}{ loading=lazy </p>
 </li>
 <li>
 <p>Plug the USB debug port into your PC via your data transfer-capable USB cable.
    your PC should play the "Device connected" sound, which indicates that it's plugged in correctly.<br></p>
 <ul>
 <li><strong>Note:</strong> The modchip will flash blue as soon as it's connected to a power source if the modchip was flashed with spacecraft-nx or hwfly-nx previously. This indicates that it's awaiting USB input.<br>
-   <img alt="" src="../../img/general_img/hwfly-with-cable.jpg" width="600" /><img alt="hwfly-flashing" src="../../img/general_img/hwfly-flashing.jpg" width="600" /><br></li>
+   <img alt="hwfly-with-cable" src="../../../img/general_img/hwfly-with-cable.jpg" width="600" />}{ loading=lazy <img alt="hwfly-flashing" src="../../../img/general_img/hwfly-flashing.jpg" width="600" /><br>}{ loading=lazy </li>
 </ul>
 </li>
 <li>
-<p>Open the extracted folder from earlier and run <code>flash.bat</code>.</p>
+<p>Extract the hwfly-firmware zip somewhere, then open the extracted folder and run <code>flash.bat</code>.</p>
 </li>
 <li>
 <p>Wait for the script to finish, it will tell you when it's done and prompt you to press a key to exit the flashing script.
-<img alt="" src="../../img/general_img/flashing-hwfly.gif" /><br></p>
+<img alt="flashing-hwfly" loading="lazy" src="../../../img/general_img/flashing-hwfly.gif" /><br></p>
 <div class="admonition warning">
 <p class="admonition-title">About "Spacecraft-NX <code>DFU</code> not found!"</p>
 <p>If the flashing script says that the Spacecraft-NX <code>DFU</code> was not found, wait for Windows to finish setting up the device. This can take a minute, so be patient and don't panic. <br></p>
