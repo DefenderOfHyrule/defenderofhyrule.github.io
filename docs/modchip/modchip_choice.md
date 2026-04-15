@@ -25,6 +25,9 @@ These dev boards are compatible with *ALL* Switch models (`HAC-001`, `HAC-001(-0
 
 !!! warning "Note regarding the SoC ribbon cable for V1 consoles"
     The "premade" SoC ribbon cables for V1 consoles will not be long enough to directly plug into the Picofly OLED modchip variant and the `RP2040-Tiny` simply lacks the FPC port that premade modchips have. More information on this will be mentioned at the relevant section on the [Modchip installation Switch](normal.md#if-your-soc-ribbon-cable-is-too-short-or-you-use-an-rp2040-tiny-development-board-you-cannot-plug-into-the-modchip-directly-to-make-it-work-regardless-you-can-just-solder-a-wire-to-the-two-middle-pins-of-the-ribbon-cable-as-pictured-below) page, at the bottom of the SoC ribbon cable installation.
+    
+!!! danger "Do you still want to install a Picofly Core modchip?"
+    If you still wish to install a Picofly Core modchip on your normal model console, you can. This branch of the guide was moved to the [Legacy](../legacy/legacy) tab.
 
 
 -----
