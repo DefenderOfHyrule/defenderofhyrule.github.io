@@ -52,6 +52,7 @@ nav:
         - 'SAMD21 based modchips': 'extras/trinket.md'
         - 'Hardmodding the SD card reader': 'extras/sdreader.md'
         - 'PicoBoot (GC)': 'extras/picoboot.md'
+    - 'Legacy': 'legacy/legacy.md'
     - Credits:
         - 'Credits': 'credits.md'
 
