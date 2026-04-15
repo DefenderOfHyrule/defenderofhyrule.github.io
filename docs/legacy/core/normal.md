@@ -68,16 +68,17 @@ These values can differ from console to console. If your modchip installation wo
      ![sp1-sp2](img/normal_img/sp1-sp2/tinned.JPG){ loading=lazy }
 
 10. Place the SoC ribbon cable and align the ribbon cable with the capacitors on the SoC.
+     ![bare caps](../../img/normal_img/soldering/bare-caps.jpg){ loading=lazy }
+     ![lined up](../../img/normal_img/soldering/lined-up.jpg)
 
 11. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM, then solder the ribbon cable down once lined up correctly.
-     ![anker](img/normal_img/lined-up.jpg){ loading=lazy }
 
 12. Apply flux and use your soldering iron to heat up the end of each capacitor together with the respective pad next to both ends of each capacitor of the `SP1` and `SP2` points, ensure the solder flows between the pad on the ribbon cable and end of the capacitor.
-     ![soldered down](img/normal_img/sollineddering/soldered-down.jpg){ loading=lazy }
+     ![soldered down](../../img/normal_img/soldering/soldered-down.jpg){ loading=lazy }
 
 13. Your ribbon cable should now be secured in place with both ends of each capacitor soldered to the pads on the ribbon cable.
        - **Optional:** Place Kapton tape across your solder joints to prevent thermal paste from potentially corroding your solder joints in the future. It also helps in cases where you might have to rework your solder joints.
-       ![kapton](img/normal_img/13-kapton.jpg){ loading=lazy }
+       ![kapton](../../img/normal_img/soldering/13-kapton.jpg){ loading=lazy }
 
 14. Install the modchip. Slide the SoC ribbon cable into the connector on the left side of the modchip, install the left side of the modchip onto the eMMC module's FPC connector, install the eMMC module on the modchip, place a non-conductive material (like Kapton tape) between the eMMC module and the RAM chips, reconnect the battery and turn the console on. The modchip should blink blue a couple of times (glitching), then white (success). You should end up at a `No SD Card` splash screen with the Picofly logo after the modchip blinks white once.
       - **Note:** Getting to the `No SD Card` screen does not *always* indicate success. Sometimes solder joints or electrical connections may be good enough for glitching but not for booting HOS (HorizonOS), please ensure that you test if your console boots by ensuring the console is off, then holding both volume buttons and pressing the power button once, letting go of the volume buttons when you see the Nintendo logo. If your Switch does *not* boot normally, please check if your console boots by removing the modchip (*not* the SoC ribbon cable) and placing the eMMC module back in its original place, then turning the console on normally. If you still experience issues related to glitching/training, refer to the [troubleshooting page](../troubleshooting/error_codes.md#error-codes-for-picofly).

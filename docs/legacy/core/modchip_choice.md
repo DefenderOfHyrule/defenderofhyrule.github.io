@@ -16,7 +16,7 @@ The modchip models we will be covering in this guide are:
 
     This is what it looks like:
 
-    ![rp2040-core](../img/general_img/core.JPG)
+    ![rp2040-core](../../img/general_img/core.JPG){ loading=lazy }
 
 Once you're done, continue to the next page using the button below.
 
