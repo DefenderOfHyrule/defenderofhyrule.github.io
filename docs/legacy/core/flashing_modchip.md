@@ -64,7 +64,7 @@ This process is the same for all Picofly modchip models, just use the pictures i
     - The micro USB / USB-C debug port that comes with a modchip "set" (image shown in the "Instructions" section below)
     - Your Hwfly/SX series modchip
     - Latest release of [hwfly-firmware](https://github.com/hwfly-nx/firmware/releases/tag/0.7.2) (`release_XXX.zip`)
-    - A computer or Android phone (computer recommended)
+    - A computer
     - A USB type C to USB type A cable / A micro USB to USB type A cable capable of data transfer
 
 
