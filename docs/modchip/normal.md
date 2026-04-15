@@ -105,7 +105,7 @@ These values can differ from console to console. If your modchip installation wo
             ![](../img/normal_img/soldering/sp1-sp2-trace.jpg)
             - If you use the `RP2040-Tiny`, it has a dedicated GPIO pin (pin 15). You can refer to the pinout at the [very top of this page](#the-pinout-for-the-modchip-lines-of-the-rp2040-tiny-board-are-outlined-and-named-in-the-image-below)
 
-1. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM.
+1. Tuck the anchor points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM.
             
      ![](../img/normal_img/soldering/bare-caps.jpg){ loading=lazy }
      ![](../img/normal_img/soldering/lined-up.jpg){ loading=lazy }

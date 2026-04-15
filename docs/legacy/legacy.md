@@ -1,4 +1,6 @@
-This page contains guides that have been depracated/outdated.
+This page contains guide pages that have been deprecated.
 
-Deprecated due to QC issues with this specific revision of chip:
-[Picofly Core install guide](core/modchip_choice.md)
+!!! note ""
+    - The following branch of the guide was deprecated due to quality control issues with this specific model of Picofly modchip:
+    [Picofly Core installation guide](core/modchip_choice.md){ .md-button .md-button--primary }
+

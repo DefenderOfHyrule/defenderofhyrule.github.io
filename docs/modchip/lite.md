@@ -97,11 +97,8 @@ These values can differ from console to console. If your modchip installation wo
             - **Note:** If your modchip model does not have this dedicated pad, you can simply scrape off some solder mask off of the `SP1`/`SP2` trace on the modchip and solder directly to said trace.
             ![](../img/normal_img/soldering/sp1-sp2-trace.jpg)
             - If you use the `RP2040-Tiny`, it has a dedicated GPIO pin (pin 15). You can refer to the pinout at the [very top of this page](#the-pinout-for-the-modchip-lines-of-the-rp2040-tiny-board-are-outlined-and-named-in-the-image-below)
-            
-     ![](../img/lite_img/soldering/bare-caps.jpg){ loading=lazy }
-     ![](../img/lite_img/soldering/lined-up.jpg){ loading=lazy }
-
-1. Tuck the anker points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM.
+     
+1. Tuck the anchor points underneath the metal frame below the SoC and the MOSFET section of the ribbon cable underneath the frame between the SoC and RAM.
             
      ![](../img/normal_img/soldering/bare-caps.jpg){ loading=lazy }
      ![](../img/normal_img/soldering/lined-up.jpg){ loading=lazy }

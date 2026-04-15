@@ -1,8 +1,6 @@
 #### Modchip models
 
-There are different modchip models for each model of Switch console, *technically* you can also use modchip models not meant for your specific Switch console but it can introduce complications, which is why it won't be covered here.
-
-The modchip models we will be covering in this guide are:
+The modchip model we will be covering in this branch of the guide is:
 
 - Picofly Core (For Normal Switch models | `HAC-001`, `HAC-001(-01)`)
 
