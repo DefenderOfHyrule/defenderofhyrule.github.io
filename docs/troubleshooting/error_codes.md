@@ -17,10 +17,8 @@ The following information was obtained from [this github repository](https://git
 Now the possible status indicators will consist of 5 colors:
 
 - `Blue` indicates glitching,
-- `Light blue` indicates training,
-- `Beige` indicates comparison to stored training data,
-- `Yellow/Orange` indicates writing sdloader to BOOT0 and/or success,
-- `Red` indicates an issue with your modchip installation (otherwise known as a fault or error code).
+- `White` indicates writing sdloader to BOOT0 and/or success,
+- `Yellow` indicates an issue with your modchip installation (otherwise known as a fault or error code).
 
 This was made possible by using Pi Pico debugging and getting rid of RGB/GRB issues.
 

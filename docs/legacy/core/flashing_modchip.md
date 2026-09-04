@@ -5,7 +5,7 @@
 Modchips have their own separate firmware version that is separate from the Switch system firmware version, this firmware ultimately determines the functionality and performance of your modchip.
 Flashing the firmware to the modchip is not mandatory if your modchip already comes "pre-flashed", but it is recommended to do so.
 
-Any Picofly firmware below version `2.75` is deprecated and is no longer supported, which is why we will be ensuring that the modchip has the latest firmware version (currently `2.82`) flashed to it. This will make sure that you have the best performance and hardware compatibility.
+Any Picofly firmware below version `2.75` is deprecated and is no longer supported, which is why we will be ensuring that the modchip has the latest firmware version (currently `2.80`) flashed to it. This will make sure that you have the best performance and hardware compatibility.
 
 This process is the same for all Picofly modchip models, just use the pictures in the instructions below as reference for your own modchip.
 
@@ -19,7 +19,7 @@ This process is the same for all Picofly modchip models, just use the pictures i
 
 - The micro USB / USB-C debug port that comes with a modchip "set" (image shown in the "Instructions" section below)
 - Your Picofly modchip
-- The latest release of [usk](https://github.com/DefenderOfHyrule/usk/releases/latest) (`firmware.uf2`)
+- The latest release of [usk](https://github.com/rehius/usk/releases/latest) (`firmware.uf2`)
 - A computer or Android phone (computer recommended)
 - A USB type C to USB type A cable / A micro USB to USB type A cable capable of data transfer
      - The type of cable required depends on the modchip revision you have.
